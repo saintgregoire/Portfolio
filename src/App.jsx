@@ -1,11 +1,11 @@
+import Header from './components/Header';
 import './styles/fonts.css';
-import { Typography } from '@mui/material';
 
 function App() {
 
   return (
     <>
-      <Typography variant='h1'>Hello</Typography>
+      <Header/>
     </>
   )
 }
