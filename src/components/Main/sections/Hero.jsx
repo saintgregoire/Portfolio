@@ -11,34 +11,64 @@ const Hero = () => {
       maxWidth="xl"
       sx={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: {
+          xs: "column",
+          lg: "row",
+        },
         alignItems: "center",
-        mt: "2rem",
+        mt: {xs: "2rem",
+          lg: '4rem',
+        }
       }}
     >
       <Box
         component="div"
         sx={{
           textAlign: "center",
-          width: "90%",
+          background: 'radial-gradient(circle, yellow 0%, rgba(255, 255, 0, 70%) 30%, transparent 50%)',
+          width: {
+            xs: "310px",
+            sm: "350px",
+          },
           overflow: "hidden",
+          order: {
+            lg: 1,
+          },
+          flex: {
+            lg: '1 1 30%',
+          }
         }}
       >
         <img
           src={gif}
           alt="Voznichka Maksym Emoji"
-          style={{ width: "100%", height: "100%", }}
+          style={{ width: "100%", height: "100%", objectFit: 'cover' }}
         />
       </Box>
 
-      <Box component="div" sx={{ textAlign: "center" }}>
+      <Box
+        component="div"
+        sx={{
+          textAlign: {
+            xs: "center",
+            lg: "start"
+          },
+          flex: {
+            lg: '1 1 60%',
+          }
+        }}
+      >
         <Typography variant="h1" component="h1">
-          Hi, I&apos;m Maksym 
-          <Typography component="span" sx={{ fontSize: "2rem",
-          display: 'inline-block',
-          animation: `${rotate} 3s infinite`,
-          transformOrigin: 'bottom right',
-          }}>
+          Hi, I&apos;m Maksym
+          <Typography
+            component="span"
+            sx={{
+              fontSize: "2rem",
+              display: "inline-block",
+              animation: `${rotate} 3s infinite`,
+              transformOrigin: "bottom right",
+            }}
+          >
             👋
           </Typography>
         </Typography>
@@ -56,7 +86,10 @@ const Hero = () => {
             mt: "1rem",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: {
+              xs: "center",
+              lg: "start",
+            },
           }}
         >
           <LocationOnIcon sx={{ fontSize: "1.3rem" }} /> Rennes, France
@@ -66,7 +99,10 @@ const Hero = () => {
           sx={{
             mt: "1rem",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: {
+              xs: "center",
+              lg: "start",
+            },
             alignItems: "center",
             gap: ".4rem",
           }}
@@ -77,8 +113,11 @@ const Hero = () => {
               width: "8px",
               height: "8px",
               borderRadius: "50%",
-              background: "green",
+              background: "#00ff11",
               position: "relative",
+              ml: {
+                lg: '5px',
+              },
               "&::before, &::after": {
                 content: '""',
                 position: "absolute",
@@ -87,7 +126,7 @@ const Hero = () => {
                 height: "100%",
                 width: "100%",
                 borderRadius: "50%",
-                boxShadow: "0 0 3px green",
+                boxShadow: "0 0 3px #00ff11",
                 animation: `${pulsation} .7s ease-out infinite`,
               },
             }}

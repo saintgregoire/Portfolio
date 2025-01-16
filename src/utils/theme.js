@@ -29,6 +29,18 @@ const theme = createTheme({
     primary: {
       main: '#18181b',
     }
+  },
+  components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          '@media (min-width: 900px)' : {
+            paddingLeft: '30px',
+            paddingRight: '30px',
+          }
+        }
+      }
+    }
   }
 })
 

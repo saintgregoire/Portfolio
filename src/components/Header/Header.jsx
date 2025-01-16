@@ -16,7 +16,9 @@ const Header = () => {
 
   return (
     <AppBar id='back-to-top-anchor' position="static" sx={{ background: "white" }}>
-      <Toolbar>
+      <Toolbar sx={{px:{
+        md: '30px',
+      }}}>
         <Typography variant="h2" component="span" sx={{ flexGrow: 1 }}>
           &lt;VM/&gt;
         </Typography>

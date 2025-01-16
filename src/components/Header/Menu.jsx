@@ -12,7 +12,10 @@ const HeaderMenu = (props) => {
           <MenuItem
             key={page}
             onClick={menuItemClickFunction}
-            sx={{ ...(isMobile && { justifyContent: "center", height: 48 }) }}
+            sx={{
+              ...(isMobile && { justifyContent: "center", height: 48 }),
+              borderRadius: '8px',
+            }}
           >
             <Link href={`#${page.toLowerCase()}`} underline="none">
               {page}

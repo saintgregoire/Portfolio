@@ -6,40 +6,43 @@ import { Box, Link } from "@mui/material";
 const Social = () => {
   return (
     <Box
-          component="div"
-          sx={{
-            display: "flex",
-            gap: ".6rem",
-            justifyContent: "center",
-            alignItems: 'center',
-            mt: "2rem",
-          }}
-        >
-          <Link
-            href="https://github.com/saintgregoire"
-            underline="none"
-            target="_blank"
-            alt="link to github"
-          >
-            <GitHubIcon />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/maksym-voznichka/"
-            underline="none"
-            target="_blank"
-            alt="link to linkedIn"
-          >
-            <LinkedInIcon />
-          </Link>
-          <Link
-            href="mailto:maksym.voznicka@gmail.com"
-            underline="none"
-            alt="link to email"
-          >
-            <EmailIcon />
-          </Link>
-        </Box>
-  )
-}
+      component="div"
+      sx={{
+        display: "flex",
+        gap: ".6rem",
+        justifyContent: {
+          xs: "center",
+          lg: "start",
+        },
+        alignItems: "center",
+        mt: "2rem",
+      }}
+    >
+      <Link
+        href="https://github.com/saintgregoire"
+        underline="none"
+        target="_blank"
+        alt="link to github"
+      >
+        <GitHubIcon />
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/maksym-voznichka/"
+        underline="none"
+        target="_blank"
+        alt="link to linkedIn"
+      >
+        <LinkedInIcon />
+      </Link>
+      <Link
+        href="mailto:maksym.voznicka@gmail.com"
+        underline="none"
+        alt="link to email"
+      >
+        <EmailIcon />
+      </Link>
+    </Box>
+  );
+};
 
-export default Social
+export default Social;
