@@ -8,6 +8,7 @@ const Hero = () => {
   return (
     <Container
       component="section"
+      id='back-to-top-anchor'
       maxWidth="xl"
       sx={{
         display: "flex",
