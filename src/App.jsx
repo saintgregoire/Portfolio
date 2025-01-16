@@ -1,4 +1,5 @@
-import Header from './components/Header';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
 import './styles/fonts.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Header/>
+      <Main/>
     </>
   )
 }

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { MenuList, MenuItem, Link, Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 
