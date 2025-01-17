@@ -12,8 +12,8 @@ const theme = createTheme({
       }
     },
     h2: {
-      fontWeight: 600,
-      fontSize: '1.5rem',
+      fontWeight: 500,
+      fontSize: '2rem',
       color: '#18181b',
     },
     h3: {

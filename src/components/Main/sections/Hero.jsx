@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Container
       component="section"
-      id='back-to-top-anchor'
+      id="back-to-top-anchor"
       maxWidth="xl"
       sx={{
         display: "flex",
@@ -17,16 +17,16 @@ const Hero = () => {
           lg: "row",
         },
         alignItems: "center",
-        mt: {xs: "2rem",
-          lg: '4rem',
-        }
+        mt: { xs: "2rem", lg: "4rem" },
+        mb: { xs: "2rem" },
       }}
     >
       <Box
         component="div"
         sx={{
           textAlign: "center",
-          background: 'radial-gradient(circle, yellow 0%, rgba(255, 255, 0, 70%) 30%, transparent 50%)',
+          background:
+            "radial-gradient(circle, yellow 0%, rgba(255, 255, 0, 70%) 30%, transparent 50%)",
           width: {
             xs: "310px",
             sm: "350px",
@@ -36,14 +36,14 @@ const Hero = () => {
             lg: 1,
           },
           flex: {
-            lg: '1 1 30%',
-          }
+            lg: "1 1 30%",
+          },
         }}
       >
         <img
           src={gif}
           alt="Voznichka Maksym Emoji"
-          style={{ width: "100%", height: "100%", objectFit: 'cover' }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </Box>
 
@@ -52,11 +52,11 @@ const Hero = () => {
         sx={{
           textAlign: {
             xs: "center",
-            lg: "start"
+            lg: "start",
           },
           flex: {
-            lg: '1 1 60%',
-          }
+            lg: "1 1 60%",
+          },
         }}
       >
         <Typography variant="h1" component="h1">
@@ -66,6 +66,7 @@ const Hero = () => {
             sx={{
               fontSize: "2rem",
               display: "inline-block",
+              willChange: 'transform',
               animation: `${rotate} 3s infinite`,
               transformOrigin: "bottom right",
             }}
@@ -117,7 +118,7 @@ const Hero = () => {
               background: "#00ff11",
               position: "relative",
               ml: {
-                lg: '5px',
+                lg: "5px",
               },
               "&::before, &::after": {
                 content: '""',
@@ -128,6 +129,7 @@ const Hero = () => {
                 width: "100%",
                 borderRadius: "50%",
                 boxShadow: "0 0 3px #00ff11",
+                willChange: 'transform, opacity',
                 animation: `${pulsation} .7s ease-out infinite`,
               },
             }}
