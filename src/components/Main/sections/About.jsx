@@ -26,6 +26,7 @@ const info = [
 ];
 
 const About = () => {
+
   return (
     <Container
       component="section"
@@ -46,10 +47,16 @@ const About = () => {
         component="h2"
         variant="h2"
         sx={{
-          my: 0,
           textAlign: { xs: "center", lg: "left" },
           order: { lg: 1 },
-          alignSelf: "end",
+          borderBottom: {
+            lg: '1px solid lightgrey',
+          },
+          width: {lg: '40%'},
+          pb: {
+            lg: '1rem',
+          },
+          alignSelf: 'end',
         }}
       >
         About me
@@ -97,11 +104,11 @@ const About = () => {
           mt: {
             xs: "1rem",
           },
-          "& > p": {
+          "& > :not(:last-child)": {
             paddingBottom: "1rem",
           },
           order: { lg: 2 },
-          alignSelf: "end",
+          alignSelf: 'end',
         }}
       >
         {info.map((item) => (
