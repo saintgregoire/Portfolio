@@ -17,7 +17,7 @@ const Hero = () => {
           lg: "row",
         },
         alignItems: "center",
-        mt: { xs: "2rem", lg: "4rem" },
+        mt: { xs: "5rem", lg: "7rem" },
         mb: { xs: "2rem" },
       }}
     >
