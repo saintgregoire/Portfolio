@@ -1,12 +1,32 @@
-import { MenuList, MenuItem, Link, Button } from "@mui/material";
+import {
+  MenuList,
+  MenuItem,
+  Link,
+  Button,
+  Typography,
+  Divider,
+} from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
+
+const pages = ["About", "Skills", "Projects", "Education", "Contacts"];
 
 const HeaderMenu = (props) => {
   const { listStyles, menuItemClickFunction, isMobile } = props;
-  const pages = ["About", "Skills", "Projects", "Education", "Contacts"];
 
   return (
     <>
+      {isMobile && (
+        <>
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{ my: 3, textAlign: "center" }}
+          >
+            &lt;VM/&gt;
+          </Typography>
+          <Divider variant="middle" />
+        </>
+      )}
       <MenuList sx={listStyles}>
         {pages.map((page) => (
           <MenuItem
@@ -14,7 +34,7 @@ const HeaderMenu = (props) => {
             onClick={menuItemClickFunction}
             sx={{
               ...(isMobile && { justifyContent: "center", height: 48 }),
-              borderRadius: '8px',
+              borderRadius: "8px",
             }}
           >
             <Link href={`#${page.toLowerCase()}`} underline="none">
