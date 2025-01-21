@@ -34,7 +34,7 @@ const About = () => {
       id="about"
       sx={{
         background: "rgb(226, 226, 226, 30%)",
-        py: { xs: "2rem" },
+        py: "2rem",
         display: "grid",
         gridTemplateColumns: {
           lg: "400px auto",
