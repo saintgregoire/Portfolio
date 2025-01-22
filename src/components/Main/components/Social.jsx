@@ -3,28 +3,28 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { Box, Link } from "@mui/material";
 
-const social = [
-  {
-    id: 1,
-    href: "https://github.com/saintgregoire",
-    alt: "link to github",
-    icon: <GitHubIcon />,
-  },
-  {
-    id: 2,
-    href: "https://www.linkedin.com/in/maksym-voznichka/",
-    alt: "link to linkedIn",
-    icon: <LinkedInIcon />,
-  },
-  {
-    id: 3,
-    href: "mailto:maksym.voznicka@gmail.com",
-    alt: "link to email",
-    icon: <EmailIcon />,
-  },
-];
-
 const Social = () => {
+  const social = [
+    {
+      id: 1,
+      href: "https://github.com/saintgregoire",
+      alt: "link to github",
+      icon: <GitHubIcon />,
+    },
+    {
+      id: 2,
+      href: "https://www.linkedin.com/in/maksym-voznichka/",
+      alt: "link to linkedIn",
+      icon: <LinkedInIcon />,
+    },
+    {
+      id: 3,
+      href: "mailto:maksym.voznicka@gmail.com",
+      alt: "link to email",
+      icon: <EmailIcon />,
+    },
+  ];
+
   return (
     <Box
       component="div"
@@ -47,11 +47,12 @@ const Social = () => {
             underline="none"
             target="_blank"
             alt={item.alt}
-            sx={{'&:hover': {
-              transform: 'scale(1.5)',
-            },
-            transition: 'transform .3s',
-          }}
+            sx={{
+              "&:hover": {
+                transform: "scale(1.5)",
+              },
+              transition: "transform .3s",
+            }}
           >
             {item.icon}
           </Link>

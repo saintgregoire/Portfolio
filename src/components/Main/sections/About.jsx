@@ -2,30 +2,30 @@ import { Box, Container, Typography } from "@mui/material";
 import myPhoto from "../../../assets/img/me.jpg";
 import { frame } from "../../../utils/keyframes";
 
-const info = [
-  {
-    id: 1,
-    title: "I'm",
-    text: " a passionate and dedicated web developer specializing in Full Stack and Frontend development using React.js, PHP and MySQL. I'm enthusiastic about crafting seamless user experiences and building robust, visually appealing web applications. Clean, efficient code and user-centered design are at the heart of my work.",
-  },
-  {
-    id: 2,
-    title: "My journey",
-    text: " as a developer began in 2023, and since then, I've embraced every opportunity to grow and challenge myself. With a strong focus on learning and adapting, I continually explore new technologies and approaches to stay ahead in the ever-evolving world of web development.",
-  },
-  {
-    id: 3,
-    title: "I have",
-    text: " a keen interest in understanding user behavior and psychology, which helps me create intuitive and engaging digital experiences for all types of users. Whether it's collaborating on ideas, prototyping, or coding the final product, I enjoy being involved in every stage of the development process.",
-  },
-  {
-    id: 4,
-    title: "A few quick things",
-    text: " about me: I'm a progressive thinker, a problem-solver, and always open to new challenges. Oh, and I'm available for new projects — so feel free to reach out! Let's build something amazing together. 😊",
-  },
-];
-
 const About = () => {
+
+  const info = [
+    {
+      id: 1,
+      title: "I'm",
+      text: " a passionate and dedicated web developer specializing in Full Stack and Frontend development using React.js, PHP and MySQL. I'm enthusiastic about crafting seamless user experiences and building robust, visually appealing web applications. Clean, efficient code and user-centered design are at the heart of my work.",
+    },
+    {
+      id: 2,
+      title: "My journey",
+      text: " as a developer began in 2023, and since then, I've embraced every opportunity to grow and challenge myself. With a strong focus on learning and adapting, I continually explore new technologies and approaches to stay ahead in the ever-evolving world of web development.",
+    },
+    {
+      id: 3,
+      title: "I have",
+      text: " a keen interest in understanding user behavior and psychology, which helps me create intuitive and engaging digital experiences for all types of users. Whether it's collaborating on ideas, prototyping, or coding the final product, I enjoy being involved in every stage of the development process.",
+    },
+    {
+      id: 4,
+      title: "A few quick things",
+      text: " about me: I'm a progressive thinker, a problem-solver, and always open to new challenges. Oh, and I'm available for new projects — so feel free to reach out! Let's build something amazing together. 😊",
+    },
+  ];
 
   return (
     <Container
