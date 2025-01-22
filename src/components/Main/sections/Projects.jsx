@@ -5,11 +5,13 @@ import estateinImg from "../../../assets/img/estatein.png";
 import charismoImg from "../../../assets/img/charismo.png";
 import orkImg from "../../../assets/img/ork.png";
 import portfolioImg from "../../../assets/img/portfolio.png";
+import CardSlider from "../components/CardSlider";
 
 const projects = [
   {
     id: 1,
-    title: "Pizza Day - Pizza Delivery",
+    title: "Pizza Day",
+    description: 'Pizza Delivery',
     img: pizzaDayImg,
     badges: ["React", "CSS", "Vite"],
     github: "https://github.com/saintgregoire/ReactHillel",
@@ -17,7 +19,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "Estatein - Real Estate Agency",
+    title: "Estatein",
+    description: 'Real Estate Agency',
     img: estateinImg,
     badges: ["HTML", "Sass", "Bootstrap", "JavaScript", "PHP", "Twig", "MySql"],
     github: "https://github.com/saintgregoire/RealEstateAgency",
@@ -26,6 +29,7 @@ const projects = [
   {
     id: 3,
     title: "My Portfolio",
+    description: null,
     img: portfolioImg,
     badges: ["React", "MUI", "Vite"],
     github: "https://github.com/saintgregoire/Portfolio",
@@ -33,7 +37,8 @@ const projects = [
   },
   {
     id: 4,
-    title: "Charismo - e-commerce",
+    title: "Charismo",
+    description: 'E-commerce',
     img: charismoImg,
     badges: ["React", "Sass", "Vite"],
     github: "https://github.com/saintgregoire/Charismo-React",
@@ -41,7 +46,8 @@ const projects = [
   },
   {
     id: 5,
-    title: "Rock-paper-scissors with Orс - desktop game",
+    title: "Rock-paper-scissors with Orс",
+    description: 'Desktop game',
     img: orkImg,
     badges: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/saintgregoire/Game",
@@ -49,7 +55,8 @@ const projects = [
   },
   {
     id: 6,
-    title: "Hlegal law company",
+    title: "Hlegal",
+    description: 'Law company',
     img: hlegalImg,
     badges: ["HTML", "Sass", "JavaScript", "Gulp"],
     github: "https://github.com/saintgregoire/final",
@@ -81,6 +88,7 @@ const Projects = () => {
       >
         Some of the noteworthy projects I have built:
       </Typography>
+      <CardSlider object={projects} />
     </Container>
   );
 };
