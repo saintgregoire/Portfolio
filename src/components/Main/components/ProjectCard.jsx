@@ -10,6 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { cardFlip } from "../../../utils/keyframes";
 import Badge from "./Badge";
+import bg from '../../../assets/img/bg_geo.png';
 
 const ProjectCard = (props) => {
   const { swiperRef, title, description, img, badges, github, site } = props;
@@ -90,6 +91,7 @@ const ProjectCard = (props) => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: 'center',
+          background: `url(${bg}) no-repeat center/cover`,
           gap: ".5rem",
           "& a": {
             transition: "transform .5s",
