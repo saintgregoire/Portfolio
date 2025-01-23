@@ -1,30 +1,129 @@
-import { Card, CardContent, Typography, CardMedia } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardMedia,
+  Box,
+  Link,
+} from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
+import { cardFlip } from "../../../utils/keyframes";
 
 const ProjectCard = (props) => {
-
-  const {swiperRef, title, description, img, badges, github, site} = props;
+  const { swiperRef, title, description, img, badges, github, site } = props;
 
   return (
-    <Card
-      sx={{ maxWidth: { xs: 400 }, margin: "0 auto" }}
-      onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-      onMouseLeave={() => swiperRef.current?.autoplay.start()}
+    <Box
+      component="div"
+      sx={{
+        maxWidth: 400,
+        height: "242px",
+        transformStyle: "preserve-3d",
+        transform: "translate3d(0, 0, 0)",
+        position: "relative",
+        "&:hover": {
+          animation: `${cardFlip} 0.5s linear both`,
+        },
+      }}
     >
-      <CardMedia
-        component="img"
-        height="140"
-        image={img}
-        alt={item.title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+      <Card
+        sx={{
+          width: "100%",
+          height: "100%",
+          margin: "0 auto",
+          position: "absolute",
+          backfaceVisibility: "hidden",
+        }}
+        onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+        onMouseLeave={() => swiperRef.current?.autoplay.start()}
+      >
+        <Box component="div" sx={{ width: "100%", overflow: "hidden" }}>
+          <CardMedia
+            component="img"
+            height="150"
+            image={img}
+            alt={title}
+            sx={{
+              width: "100%",
+              objectFit: "cover",
+              objectPosition: "left top",
+            }}
+          />
+        </Box>
+
+        <CardContent>
+          <Typography
+            gutterBottom
+            component="h3"
+            variant="h5"
+            sx={{ fontSize: "19px" }}
+          >
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          position: "absolute",
+          backfaceVisibility: "hidden",
+          transform: 'rotateX(180deg)',
+          width: "100%",
+          height: "100%",
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: 'center',
+          gap: ".5rem",
+          "& a": {
+            transition: "transform .5s",
+          },
+          "& a:hover": {
+            transform: "scale(1.5)",
+          },
+        }}
+      >
+        <Typography component="h3" variant="h5" sx={{px: '2rem', }}>
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography component="p" variant="body2">
           {description}
         </Typography>
-      </CardContent>
-    </Card>
+        <Box
+          component="div"
+          sx={{
+            mt: '.5rem',
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+          }}
+        >
+          <Link
+            href={github}
+            underline="none"
+            target="_blank"
+            alt={`github ${title}`}
+          >
+            <GitHubIcon sx={{ fontSize: "3rem" }} />
+          </Link>
+          <Link
+            href={site}
+            underline="none"
+            target="_blank"
+            alt={`site ${title}`}
+          >
+            <LanguageIcon sx={{ fontSize: "3rem" }} />
+          </Link>
+        </Box>
+      </Card>
+    </Box>
   );
 };
 

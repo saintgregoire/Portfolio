@@ -46,3 +46,15 @@ export const frame = keyframes`
     border-radius: 69% 31% 68% 32% / 44% 64% 36% 56%;
   }
 `;
+
+export const cardFlip = keyframes`
+0% {
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    transform: scale(1.2) rotateX(-90deg);
+  }
+  100% {
+    transform: scale(1) rotateX(-180deg);
+  }
+`

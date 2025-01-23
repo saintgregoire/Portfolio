@@ -1,18 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Box, IconButton } from "@mui/material";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
-import ProjectCard from "./ProjectCard";
 
-const CardSlider = (props) => {
-
-  const {object} = props;
-
-  const swiperRef = useRef(null);
+const CardSlider = ({children, swiperRef}) => {
 
   return (
     <Box
@@ -54,9 +48,9 @@ const CardSlider = (props) => {
           },
         }}
       >
-        {object.map((item) => (
-          <SwiperSlide key={item.id}>
-            {/* ДОБАВИТЬ КАРТУ */}
+        {children.map((child, index) => (
+          <SwiperSlide key={index}>
+            {child}
           </SwiperSlide>
         ))}
       </Swiper>
