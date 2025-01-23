@@ -9,6 +9,7 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { cardFlip } from "../../../utils/keyframes";
+import Badge from "./Badge";
 
 const ProjectCard = (props) => {
   const { swiperRef, title, description, img, badges, github, site } = props;
@@ -18,7 +19,9 @@ const ProjectCard = (props) => {
       component="div"
       sx={{
         maxWidth: 400,
-        height: "242px",
+        height: "400px",
+        display: 'flex',
+        alignItems: 'center',
         transformStyle: "preserve-3d",
         transform: "translate3d(0, 0, 0)",
         position: "relative",
@@ -30,7 +33,7 @@ const ProjectCard = (props) => {
       <Card
         sx={{
           width: "100%",
-          height: "100%",
+          height: "auto",
           margin: "0 auto",
           position: "absolute",
           backfaceVisibility: "hidden",
@@ -52,7 +55,7 @@ const ProjectCard = (props) => {
           />
         </Box>
 
-        <CardContent>
+        <CardContent sx={{borderTop: '1px solid lightgrey'}}>
           <Typography
             gutterBottom
             component="h3"
@@ -64,6 +67,13 @@ const ProjectCard = (props) => {
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
+          <Box component='div' sx={{display: 'flex', gap: '10px', flexWrap: 'wrap', mt: '1rem'}}>
+          {badges.map((item, index) => (
+            <>
+              <Badge key={index} name={item} />
+            </>
+          ))}
+          </Box>
         </CardContent>
       </Card>
 

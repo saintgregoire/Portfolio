@@ -18,7 +18,7 @@ const Projects = () => {
       title: "Pizza Day",
       description: "Pizza Delivery",
       img: pizzaDayImg,
-      badges: ["React", "CSS", "Vite"],
+      badges: ["React", "CSS", "Vite", "Rest Api"],
       github: "https://github.com/saintgregoire/ReactHillel",
       site: "https://resplendent-hotteok-54ec2d.netlify.app/",
     },
@@ -84,7 +84,7 @@ const Projects = () => {
       title={item.title}
       description={item.description}
       img={item.img}
-      badges={null}
+      badges={item.badges}
       github={item.github}
       site={item.site}
     />
