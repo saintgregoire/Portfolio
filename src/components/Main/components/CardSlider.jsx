@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import { Box, IconButton } from "@mui/material";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 
-const CardSlider = ({children, swiperRef}) => {
+const CardSlider = ({children}) => {
 
   return (
     <Box
@@ -24,19 +24,14 @@ const CardSlider = ({children, swiperRef}) => {
       }}
     >
       <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
         style={{ paddingBottom: "2rem" }}
-        modules={[Pagination, Autoplay, Navigation]}
+        modules={[Pagination, Navigation]}
         spaceBetween={16}
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation={{
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
-        }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
         }}
         loop={true}
         breakpoints={{

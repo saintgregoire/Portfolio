@@ -10,10 +10,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { cardFlip } from "../../../utils/keyframes";
 import Badge from "./Badge";
-import bg from '../../../assets/img/bg_geo.png';
+import bg from "../../../assets/img/bg_geo.png";
 
 const ProjectCard = (props) => {
-  const { swiperRef, title, description, img, badges, github, site } = props;
+  const { title, description, img, badges, github, site } = props;
 
   return (
     <Box
@@ -21,8 +21,8 @@ const ProjectCard = (props) => {
       sx={{
         maxWidth: 400,
         height: "400px",
-        display: 'flex',
-        alignItems: 'center',
+        display: "flex",
+        alignItems: "center",
         transformStyle: "preserve-3d",
         transform: "translate3d(0, 0, 0)",
         position: "relative",
@@ -39,8 +39,6 @@ const ProjectCard = (props) => {
           position: "absolute",
           backfaceVisibility: "hidden",
         }}
-        onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-        onMouseLeave={() => swiperRef.current?.autoplay.start()}
       >
         <Box component="div" sx={{ width: "100%", overflow: "hidden" }}>
           <CardMedia
@@ -56,7 +54,7 @@ const ProjectCard = (props) => {
           />
         </Box>
 
-        <CardContent sx={{borderTop: '1px solid lightgrey'}}>
+        <CardContent sx={{ borderTop: "1px solid lightgrey" }}>
           <Typography
             gutterBottom
             component="h3"
@@ -68,12 +66,13 @@ const ProjectCard = (props) => {
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
-          <Box component='div' sx={{display: 'flex', gap: '10px', flexWrap: 'wrap', mt: '1rem'}}>
-          {badges.map((item, index) => (
-            <>
+          <Box
+            component="div"
+            sx={{ display: "flex", gap: "10px", flexWrap: "wrap", mt: "1rem" }}
+          >
+            {badges.map((item, index) => (
               <Badge key={index} name={item} />
-            </>
-          ))}
+            ))}
           </Box>
         </CardContent>
       </Card>
@@ -82,7 +81,7 @@ const ProjectCard = (props) => {
         sx={{
           position: "absolute",
           backfaceVisibility: "hidden",
-          transform: 'rotateX(180deg)',
+          transform: "rotateX(180deg)",
           width: "100%",
           height: "100%",
           margin: "0 auto",
@@ -90,7 +89,7 @@ const ProjectCard = (props) => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          textAlign: 'center',
+          textAlign: "center",
           background: `url(${bg}) no-repeat center/cover`,
           gap: ".5rem",
           "& a": {
@@ -101,7 +100,7 @@ const ProjectCard = (props) => {
           },
         }}
       >
-        <Typography component="h3" variant="h5" sx={{px: '2rem', }}>
+        <Typography component="h3" variant="h5" sx={{ px: "2rem" }}>
           {title}
         </Typography>
         <Typography component="p" variant="body2">
@@ -110,7 +109,7 @@ const ProjectCard = (props) => {
         <Box
           component="div"
           sx={{
-            mt: '.5rem',
+            mt: ".5rem",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

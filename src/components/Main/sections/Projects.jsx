@@ -7,10 +7,8 @@ import orkImg from "../../../assets/img/ork.png";
 import portfolioImg from "../../../assets/img/portfolio.png";
 import CardSlider from "../components/CardSlider";
 import ProjectCard from "../components/ProjectCard";
-import { useRef } from "react";
 
 const Projects = () => {
-  const swiperRef = useRef(null);
 
   const projects = [
     {
@@ -80,7 +78,6 @@ const Projects = () => {
   const cards = projects.map((item) => (
     <ProjectCard
       key={item.id}
-      swiperRef={swiperRef}
       title={item.title}
       description={item.description}
       img={item.img}
@@ -112,7 +109,7 @@ const Projects = () => {
       >
         Some of the noteworthy projects I have built:
       </Typography>
-      <CardSlider swiperRef={swiperRef}>{cards}</CardSlider>
+      <CardSlider>{cards}</CardSlider>
     </Container>
   );
 };
