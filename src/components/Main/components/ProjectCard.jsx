@@ -19,6 +19,7 @@ const ProjectCard = (props) => {
     <Box
       component="div"
       sx={{
+        mx: 'auto',
         maxWidth: 400,
         height: "400px",
         display: "flex",

@@ -7,9 +7,9 @@ import orkImg from "../../../assets/img/projects/ork.png";
 import portfolioImg from "../../../assets/img/projects/portfolio.png";
 import CardSlider from "../components/CardSlider";
 import ProjectCard from "../components/ProjectCard";
+import { Pagination, Navigation } from "swiper/modules";
 
 const Projects = () => {
-
   const projects = [
     {
       id: 1,
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       id: 3,
       title: "My Portfolio",
-      description: 'Portfolio website',
+      description: "Portfolio website",
       img: portfolioImg,
       badges: ["React", "MUI", "Vite"],
       github: "https://github.com/saintgregoire/Portfolio",
@@ -74,6 +74,40 @@ const Projects = () => {
       site: "https://663e6d3bf60fc1363789b4ad--stupendous-cuchufli-b2b986.netlify.app/",
     },
   ];
+
+  const swiperSettings = {
+    style: { paddingBottom: "2rem" },
+    modules: [Pagination, Navigation],
+    spaceBetween: 16,
+    slidesPerView: 1,
+    pagination: { clickable: true },
+    navigation: {
+      prevEl: ".custom-prev",
+      nextEl: ".custom-next",
+    },
+    loop: true,
+    breakpoints: {
+      900: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  };
+
+  const swiperStyle = {
+    width: "100%",
+    padding: 2,
+    px: { md: 6 },
+    position: "relative",
+    "& .swiper-pagination": {
+      bottom: "0",
+    },
+    "& .swiper-pagination-bullet-active": {
+      background: "rgba(0, 0, 0, 0.5)",
+    },
+  };
 
   const cards = projects.map((item) => (
     <ProjectCard
@@ -109,7 +143,12 @@ const Projects = () => {
       >
         Some of the noteworthy projects I have built:
       </Typography>
-      <CardSlider>{cards}</CardSlider>
+      <CardSlider
+        swiperSettings={swiperSettings}
+        sx={swiperStyle}
+      >
+        {cards}
+      </CardSlider>
     </Container>
   );
 };
