@@ -1,4 +1,5 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, List, Typography } from "@mui/material";
+import EducationCard from "../components/EducationCard";
 
 const Education = () => {
   return (
@@ -27,6 +28,11 @@ const Education = () => {
         Highlights of my educational background and key qualifications I&apos;ve
         gained:
       </Typography>
+      <Box component="div">
+        <List>
+          <EducationCard title='3W Academy' coursName='Developement Web' desc='Lorem dhuash dshfudsiufh ds fadaiufhdsiu dshfui' />
+        </List>
+      </Box>
     </Container>
   );
 };
