@@ -1,18 +1,18 @@
 import { Box, Typography } from "@mui/material";
-import bootstrapLogo from "../../../assets/img/bootstrap.png";
-import cssLogo from "../../../assets/img/css-512.webp";
-import gulpLogo from "../../../assets/img/gulp.webp";
-import htmlLogo from "../../../assets/img/html.webp";
-import jsLogo from "../../../assets/img/js.png";
-import muiLogo from "../../../assets/img/mui.png";
-import phpLogo from "../../../assets/img/php.png";
-import reactLogo from "../../../assets/img/react.png";
-import restApiLogo from "../../../assets/img/rest_api.png";
-import sassLogo from "../../../assets/img/sass.png";
-import tailwindLogo from "../../../assets/img/tailwind.png";
-import twigLogo from "../../../assets/img/twig.png";
-import viteLogo from "../../../assets/img/vite.png";
-import mySqlLogo from "../../../assets/img/mysql.webp";
+import bootstrapLogo from "../../../assets/img/icons/bootstrap.png";
+import cssLogo from "../../../assets/img/icons/css-512.webp";
+import gulpLogo from "../../../assets/img/icons/gulp.webp";
+import htmlLogo from "../../../assets/img/icons/html.webp";
+import jsLogo from "../../../assets/img/icons/js.png";
+import muiLogo from "../../../assets/img/icons/mui.png";
+import phpLogo from "../../../assets/img/icons/php.png";
+import reactLogo from "../../../assets/img/icons/react.png";
+import restApiLogo from "../../../assets/img/icons/rest_api.png";
+import sassLogo from "../../../assets/img/icons/sass.png";
+import tailwindLogo from "../../../assets/img/icons/tailwind.png";
+import twigLogo from "../../../assets/img/icons/twig.png";
+import viteLogo from "../../../assets/img/icons/vite.png";
+import mySqlLogo from "../../../assets/img/icons/mysql.webp";
 
 const Badge = ({name}) => {
 

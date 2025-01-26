@@ -1,10 +1,10 @@
 import { Container, Typography } from "@mui/material";
-import hlegalImg from "../../../assets/img/hlegal.png";
-import pizzaDayImg from "../../../assets/img/pizzaDay.png";
-import estateinImg from "../../../assets/img/estatein.png";
-import charismoImg from "../../../assets/img/charismo.png";
-import orkImg from "../../../assets/img/ork.png";
-import portfolioImg from "../../../assets/img/portfolio.png";
+import hlegalImg from "../../../assets/img/projects/hlegal.png";
+import pizzaDayImg from "../../../assets/img/projects/pizzaDay.png";
+import estateinImg from "../../../assets/img/projects/estatein.png";
+import charismoImg from "../../../assets/img/projects/charismo.png";
+import orkImg from "../../../assets/img/projects/ork.png";
+import portfolioImg from "../../../assets/img/projects/portfolio.png";
 import CardSlider from "../components/CardSlider";
 import ProjectCard from "../components/ProjectCard";
 
