@@ -154,6 +154,7 @@ const Education = () => {
           sx={{
             maxWidth: {
               xs: "600px",
+              md: '650px',
               lg: "900px",
             },
             width: "100%",

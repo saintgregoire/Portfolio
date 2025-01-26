@@ -54,7 +54,7 @@ const FullScreenImage = ({ src, alt, swiperRef }) => {
       <Box
         component="div"
         sx={{
-          border: "1px solid grey",
+          border: "1px solid lightgrey",
           borderRadius: "8px",
           overflow: "hidden",
           display: "flex",
@@ -82,8 +82,7 @@ const FullScreenImage = ({ src, alt, swiperRef }) => {
             style: {
               background: "rgba(255, 255, 255, 0.2)",
               boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-              backdropFilter: 'blur(6px)',
-              
+              backdropFilter: "blur(6px)",
             },
           }}
         >

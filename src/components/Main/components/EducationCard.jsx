@@ -40,7 +40,7 @@ const EducationCard = (props) => {
               <Typography component="p" variant="body2">
                 {date}
               </Typography>
-              <Typography component="p" variant="body2" sx={{ pt: ".3rem" }}>
+              <Typography component="p" variant="body2" sx={{ pt: ".3rem", fontSize: {md: '16px'} }}>
                 {desc}
               </Typography>
             </>
