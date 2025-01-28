@@ -13,7 +13,7 @@ import HideOnScroll from "./components/HideOnScroll";
 const Header = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
     <HideOnScroll>

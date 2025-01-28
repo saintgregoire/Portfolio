@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 
-const pages = ["About", "Skills", "Projects", "Education", "Contacts"];
+const pages = ["About", "Skills", "Projects", "Education", "Recommendations", "Contacts"];
 
 const HeaderMenu = (props) => {
   const { listStyles, menuItemClickFunction, isMobile } = props;
