@@ -31,16 +31,16 @@ const EducationCard = (props) => {
           secondary={
             <>
               <Typography
-                component="p"
+                component="span"
                 variant="body1"
-                sx={{ color: "text.primary" }}
+                sx={{ color: "text.primary", display: 'block' }}
               >
                 {coursName}
               </Typography>
-              <Typography component="p" variant="body2">
+              <Typography component="span" variant="body2" sx={{display: 'block'}}>
                 {date}
               </Typography>
-              <Typography component="p" variant="body2" sx={{ pt: ".3rem", fontSize: {md: '16px'} }}>
+              <Typography component="span" variant="body2" sx={{ pt: ".3rem", fontSize: {md: '16px'}, display: 'block' }}>
                 {desc}
               </Typography>
             </>

@@ -49,7 +49,7 @@ const Education = () => {
     {
       id: 3,
       school: "Hillel IT School",
-      cours: "React",
+      course: "React",
       period: "Nov. 2024 - Jan. 2025",
       description:
         "During my React training, I learned to build dynamic, high-performance UIs by understanding components, props, and state, using hooks for lifecycle and state management, and implementing routing with React Router for SPAs. I gained experience in fetching real-time data with APIs (fetch, Axios), setting up projects with Vite, optimizing performance, and following best practices. I also worked with MUI (Material-UI) to design UIs and managed forms with React Hook Form for smooth validation.",
