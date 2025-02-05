@@ -1,14 +1,42 @@
-import { Button, TextField } from "@mui/material";
-import { useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Box, Button, Checkbox, TextField } from "@mui/material";
+import { useForm, Controller } from "react-hook-form";
+import { z } from "zod";
+
+const schema = z.object({
+  name: z.string().min(3),
+  email: z.string().email(),
+  message: z.string().min(10),
+});
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    control,
+    formState: { isValid, errors },
+  } = useForm({
+    mode: "onBlur",
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit = (data) => {
+    console.log("Submit form", data);
+    reset();
+  };
 
   return (
-    <form
-      style={{
+    <Box
+      component="form"
+      noValidate
+      onSubmit={handleSubmit(onSubmit)}
+      sx={{
         marginTop: "1.5rem",
         display: "flex",
         flexDirection: "column",
@@ -16,36 +44,31 @@ const ContactForm = () => {
       }}
     >
       <TextField
+        error={errors.name && true}
         fullWidth
         id="input-name"
         label="Name"
-        name="name"
-        value={name}
-        onChange={(e) => {
-          setName(e.target.value);
-        }}
+        {...register("name")}
+        helperText={errors.name && errors.name.message}
       />
       <TextField
+        error={errors.email && true}
         fullWidth
         id="input-email"
         label="Email"
         type="email"
-        value={email}
-        onChange={(e) => {
-          setEmail(e.target.value);
-        }}
+        {...register("email")}
+        helperText={errors.email && errors.email.message}
       />
       <TextField
+        error={errors.message && true}
         fullWidth
         id="input-message"
         label="Message"
-        name="message"
+        {...register("message")}
         multiline
         rows={4}
-        value={message}
-        onChange={(e) => {
-          setMessage(e.target.value);
-        }}
+        helperText={errors.message && errors.message.message}
       />
 
       <Button
@@ -53,11 +76,12 @@ const ContactForm = () => {
         variant="contained"
         color="primary"
         fullWidth
-        sx={{ mt: 2 }}
+        disabled={!isValid}
+        sx={{ mt: 0.5 }}
       >
         Submit
       </Button>
-    </form>
+    </Box>
   );
 };
 
