@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -20,6 +21,10 @@ const schema = z.object({
     }),
   }),
 });
+
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactForm = () => {
   const {
@@ -38,9 +43,14 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log("Submit form", data);
-    reset();
+  const onSubmit = async (data) => {
+    try {
+      await emailjs.send(serviceId, templateId, data, publicKey);
+      reset();
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      
+    }
   };
 
   return (
@@ -53,8 +63,8 @@ const ContactForm = () => {
         display: "flex",
         flexDirection: "column",
         gap: "1rem",
-        width: '100%',
-        maxWidth: '550px'
+        width: "100%",
+        maxWidth: "550px",
       }}
     >
       <Controller
@@ -137,7 +147,7 @@ const ContactForm = () => {
         variant="contained"
         color="primary"
         disabled={!isValid}
-        sx={{ mt: 0.5}}
+        sx={{ mt: 0.5 }}
       >
         Submit
       </Button>
