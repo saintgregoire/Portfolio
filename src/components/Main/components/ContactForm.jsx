@@ -49,7 +49,6 @@ const ContactForm = () => {
       reset();
     } catch (error) {
       console.error("EmailJS error:", error);
-      
     }
   };
 
