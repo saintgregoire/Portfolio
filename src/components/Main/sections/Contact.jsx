@@ -1,4 +1,5 @@
 import { Container, Typography } from "@mui/material";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -24,6 +25,7 @@ const Contact = () => {
         <br />
         Let&apos;s connect and create something great together.
       </Typography>
+      <ContactForm />
     </Container>
   );
 };
