@@ -10,6 +10,9 @@ const Contact = () => {
       sx={{
         py: "2rem",
         textAlign: "center",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
       }}
     >
       <Typography component="h2" variant="h2">

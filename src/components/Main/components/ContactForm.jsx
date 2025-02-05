@@ -1,5 +1,12 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Box, Button, Checkbox, TextField } from "@mui/material";
+import {
+  Box,
+  Button,
+  Checkbox,
+  FormHelperText,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 
@@ -7,11 +14,15 @@ const schema = z.object({
   name: z.string().min(3),
   email: z.string().email(),
   message: z.string().min(10),
+  checkbox: z.literal(true, {
+    errorMap: () => ({
+      message: "You need to agree to the terms",
+    }),
+  }),
 });
 
 const ContactForm = () => {
   const {
-    register,
     handleSubmit,
     reset,
     control,
@@ -22,6 +33,7 @@ const ContactForm = () => {
       name: "",
       email: "",
       message: "",
+      checkbox: false,
     },
     resolver: zodResolver(schema),
   });
@@ -41,43 +53,91 @@ const ContactForm = () => {
         display: "flex",
         flexDirection: "column",
         gap: "1rem",
+        width: '100%',
+        maxWidth: '550px'
       }}
     >
-      <TextField
-        error={errors.name && true}
-        fullWidth
-        id="input-name"
-        label="Name"
-        {...register("name")}
-        helperText={errors.name && errors.name.message}
+      <Controller
+        name="name"
+        control={control}
+        render={({ field }) => (
+          <TextField
+            {...field}
+            error={Boolean(errors.name)}
+            fullWidth
+            id="input-name"
+            label="Name"
+            helperText={errors.name && errors.name.message}
+          />
+        )}
       />
-      <TextField
-        error={errors.email && true}
-        fullWidth
-        id="input-email"
-        label="Email"
-        type="email"
-        {...register("email")}
-        helperText={errors.email && errors.email.message}
+
+      <Controller
+        name="email"
+        control={control}
+        render={({ field }) => (
+          <TextField
+            {...field}
+            error={Boolean(errors.email)}
+            fullWidth
+            id="input-email"
+            label="Email"
+            type="email"
+            helperText={errors.email && errors.email.message}
+          />
+        )}
       />
-      <TextField
-        error={errors.message && true}
-        fullWidth
-        id="input-message"
-        label="Message"
-        {...register("message")}
-        multiline
-        rows={4}
-        helperText={errors.message && errors.message.message}
+
+      <Controller
+        name="message"
+        control={control}
+        render={({ field }) => (
+          <TextField
+            {...field}
+            error={Boolean(errors.message)}
+            fullWidth
+            id="input-message"
+            label="Message"
+            multiline
+            rows={4}
+            helperText={errors.message && errors.message.message}
+          />
+        )}
+      />
+
+      <Controller
+        name="checkbox"
+        control={control}
+        render={({ field }) => (
+          <Box component="div">
+            <Box component="div" sx={{ display: "flex", alignItems: "center" }}>
+              <Checkbox
+                {...field}
+                checked={field.value}
+                sx={{
+                  p: "0 .5rem 0 0",
+                  color: errors.checkbox ? "#d32f2f" : "inherit",
+                }}
+              />
+              <Typography component="p" sx={{ fontSize: "12px" }}>
+                I agree with Terms of Use & Privacy Policy
+              </Typography>
+            </Box>
+            {errors.checkbox && (
+              <FormHelperText sx={{ color: "#d32f2f", mx: "14px" }}>
+                {errors.checkbox.message}
+              </FormHelperText>
+            )}
+          </Box>
+        )}
       />
 
       <Button
         type="submit"
         variant="contained"
         color="primary"
-        fullWidth
         disabled={!isValid}
-        sx={{ mt: 0.5 }}
+        sx={{ mt: 0.5}}
       >
         Submit
       </Button>
