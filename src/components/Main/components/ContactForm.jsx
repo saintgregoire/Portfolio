@@ -10,6 +10,8 @@ import {
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
+import { useContext } from "react";
+import { SnackbarContext } from "../../../context/SnackbarContext";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -27,6 +29,9 @@ const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactForm = () => {
+
+  const {setOpen, setResult} = useContext(SnackbarContext);
+
   const {
     handleSubmit,
     reset,
@@ -46,9 +51,13 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     try {
       await emailjs.send(serviceId, templateId, data, publicKey);
+      setResult("success");
+      setOpen(true);
       reset();
     } catch (error) {
       console.error("EmailJS error:", error);
+      setResult("error");
+      setOpen(true);
     }
   };
 
