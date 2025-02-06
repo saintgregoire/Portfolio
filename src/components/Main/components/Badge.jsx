@@ -13,6 +13,13 @@ import tailwindLogo from "../../../assets/img/icons/tailwind.png";
 import twigLogo from "../../../assets/img/icons/twig.png";
 import viteLogo from "../../../assets/img/icons/vite.png";
 import mySqlLogo from "../../../assets/img/icons/mysql.webp";
+import reactHookFormLogo from "../../../assets/img/icons/react-hook-form.png";
+import zodLogo from "../../../assets/img/icons/zod.png";
+import emailJsLogo from "../../../assets/img/icons/emailjs.png";
+import routerLogo from "../../../assets/img/icons/router.png";
+import swiperLogo from "../../../assets/img/icons/swiper.png";
+import i18nLogo from "../../../assets/img/icons/i18n.png";
+
 
 const Badge = ({name}) => {
 
@@ -31,6 +38,12 @@ const Badge = ({name}) => {
     twig: twigLogo,
     vite: viteLogo,
     mysql: mySqlLogo,
+    "react hook form": reactHookFormLogo,
+    zod: zodLogo,
+    emailjs: emailJsLogo,
+    "react router": routerLogo,
+    swiperjs: swiperLogo,
+    i18next: i18nLogo
   };
 
   const img = images[name.toLowerCase()];

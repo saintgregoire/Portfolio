@@ -1,5 +1,6 @@
 import { Container, Typography } from "@mui/material";
 import ContactForm from "../components/ContactForm";
+import Social from "../components/Social";
 
 const Contact = () => {
   return (
@@ -28,6 +29,7 @@ const Contact = () => {
         <br />
         Let&apos;s connect and create something great together.
       </Typography>
+      <Social />
       <ContactForm />
     </Container>
   );

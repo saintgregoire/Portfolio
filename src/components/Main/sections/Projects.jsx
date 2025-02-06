@@ -16,7 +16,15 @@ const Projects = () => {
       title: "Pizza Day",
       description: "Pizza Delivery",
       img: pizzaDayImg,
-      badges: ["React", "CSS", "Vite", "Rest Api"],
+      badges: [
+        "React",
+        "CSS",
+        "Vite",
+        "React Hook Form",
+        "Zod",
+        "React Router",
+        "Rest Api",
+      ],
       github: "https://github.com/saintgregoire/ReactHillel",
       site: "https://resplendent-hotteok-54ec2d.netlify.app/",
     },
@@ -30,6 +38,7 @@ const Projects = () => {
         "Sass",
         "Bootstrap",
         "JavaScript",
+        "SwiperJs",
         "PHP",
         "Twig",
         "MySql",
@@ -42,7 +51,7 @@ const Projects = () => {
       title: "My Portfolio",
       description: "Portfolio website",
       img: portfolioImg,
-      badges: ["React", "MUI", "Vite"],
+      badges: ["React", "MUI", "React Router", "React Hook Form", "Zod", "EmailJS", "SwiperJs", "i18next", "Vite"],
       github: "https://github.com/saintgregoire/Portfolio",
       site: null,
     },
@@ -51,7 +60,7 @@ const Projects = () => {
       title: "Charismo",
       description: "E-commerce",
       img: charismoImg,
-      badges: ["React", "Sass", "Vite"],
+      badges: ["React", "Sass", "SwiperJs", "React Router", "Vite"],
       github: "https://github.com/saintgregoire/Charismo-React",
       site: "https://66dc7af221f96afe439da0bd--snazzy-zabaione-19c86e.netlify.app/",
     },
@@ -76,7 +85,7 @@ const Projects = () => {
   ];
 
   const swiperSettings = {
-    style: { paddingBottom: "2rem" },
+    style: { paddingBottom: "4rem" },
     modules: [Pagination, Navigation],
     spaceBetween: 16,
     slidesPerView: 1,
@@ -143,10 +152,7 @@ const Projects = () => {
       >
         Some of the noteworthy projects I have built:
       </Typography>
-      <CardSlider
-        swiperSettings={swiperSettings}
-        sx={swiperStyle}
-      >
+      <CardSlider swiperSettings={swiperSettings} sx={swiperStyle}>
         {cards}
       </CardSlider>
     </Container>
