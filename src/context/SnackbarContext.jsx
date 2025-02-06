@@ -4,12 +4,12 @@ export const SnackbarContext = createContext();
 SnackbarContext.displayName = "SnackbarContext";
 
 const SnackbarContextProvider = ({ children }) => {
-  const [open, setOpen] = useState(false);
+  const [openSnack, setOpenSnack] = useState(false);
   const [result, setResult] = useState("");
 
   const snackbarValue = {
-    open: open,
-    setOpen: setOpen,
+    openSnack: openSnack,
+    setOpenSnack: setOpenSnack,
     result: result,
     setResult: setResult,
   };

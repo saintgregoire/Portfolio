@@ -12,6 +12,7 @@ import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { useContext } from "react";
 import { SnackbarContext } from "../../../context/SnackbarContext";
+import { DialogContext } from "../../../context/DialogContext";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -29,8 +30,14 @@ const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const ContactForm = () => {
+  const { setOpenSnack, setResult } = useContext(SnackbarContext);
 
-  const {setOpen, setResult} = useContext(SnackbarContext);
+  const { setOpenDialog, setContent } = useContext(DialogContext);
+
+  const handleShowTerms = () => {
+    setOpenDialog(true);
+    setContent("terms");
+  };
 
   const {
     handleSubmit,
@@ -52,12 +59,13 @@ const ContactForm = () => {
     try {
       await emailjs.send(serviceId, templateId, data, publicKey);
       setResult("success");
-      setOpen(true);
+      setOpenSnack(true);
       reset();
     } catch (error) {
       console.error("EmailJS error:", error);
       setResult("error");
-      setOpen(true);
+      setOpenSnack(true);
+      reset();
     }
   };
 
@@ -137,8 +145,32 @@ const ContactForm = () => {
                   color: errors.checkbox ? "#d32f2f" : "inherit",
                 }}
               />
-              <Typography component="p" sx={{ fontSize: "12px" }}>
-                I agree with Terms of Use & Privacy Policy
+              <Typography
+                component="p"
+                sx={{
+                  fontSize: "12px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: ".1rem",
+                }}
+              >
+                I agree with
+                <Button
+                  variant="text"
+                  onClick={handleShowTerms}
+                  sx={{
+                    p: 0,
+                    fontWeight: 400,
+                    fontSize: "12px",
+                    textTransform: "none",
+                    "&:hover": {
+                      background: "none",
+                      textDecoration: "underline",
+                    },
+                  }}
+                >
+                  Terms of Use & Privacy Policy
+                </Button>
               </Typography>
             </Box>
             {errors.checkbox && (

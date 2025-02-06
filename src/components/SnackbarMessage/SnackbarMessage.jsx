@@ -3,15 +3,15 @@ import { useContext } from "react";
 import { SnackbarContext } from "../../context/SnackbarContext";
 
 const SnackbarMessage = () => {
-  const { open, setOpen, result } = useContext(SnackbarContext);
+  const { openSnack, setOpenSnack, result } = useContext(SnackbarContext);
 
   const handleClose = () => {
-    setOpen(false);
+    setOpenSnack(false);
   };
 
   return (
     <Snackbar
-      open={open}
+      open={openSnack}
       autoHideDuration={6000}
       onClose={handleClose}
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}

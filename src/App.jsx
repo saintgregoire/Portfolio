@@ -1,3 +1,4 @@
+import DialogMessage from './components/DialogMessage/DialogMessage';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -10,8 +11,9 @@ function App() {
     <>
       <Header/>
       <Main/>
-      <SnackbarMessage />
       <Footer />
+      <SnackbarMessage />
+      <DialogMessage />
     </>
   )
 }
