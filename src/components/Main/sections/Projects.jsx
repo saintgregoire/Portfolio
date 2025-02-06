@@ -51,7 +51,7 @@ const Projects = () => {
       title: "My Portfolio",
       description: "Portfolio website",
       img: portfolioImg,
-      badges: ["React", "MUI", "React Router", "React Hook Form", "Zod", "EmailJS", "SwiperJs", "i18next", "Vite"],
+      badges: ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
       github: "https://github.com/saintgregoire/Portfolio",
       site: null,
     },
@@ -85,7 +85,7 @@ const Projects = () => {
   ];
 
   const swiperSettings = {
-    style: { paddingBottom: "4rem" },
+    style: { paddingBottom: "3rem" },
     modules: [Pagination, Navigation],
     spaceBetween: 16,
     slidesPerView: 1,
