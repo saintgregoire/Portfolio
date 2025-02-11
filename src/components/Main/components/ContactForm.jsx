@@ -13,6 +13,7 @@ import emailjs from "@emailjs/browser";
 import { useContext } from "react";
 import { SnackbarContext } from "../../../context/SnackbarContext";
 import { DialogContext } from "../../../context/DialogContext";
+import { useTranslation } from "react-i18next";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -69,6 +70,8 @@ const ContactForm = () => {
     }
   };
 
+  const {t} = useTranslation();
+
   return (
     <Box
       component="form"
@@ -92,7 +95,7 @@ const ContactForm = () => {
             error={Boolean(errors.name)}
             fullWidth
             id="input-name"
-            label="Name"
+            label={t("name")}
             helperText={errors.name && errors.name.message}
           />
         )}
@@ -107,7 +110,7 @@ const ContactForm = () => {
             error={Boolean(errors.email)}
             fullWidth
             id="input-email"
-            label="Email"
+            label={t("email")}
             type="email"
             helperText={errors.email && errors.email.message}
           />
@@ -123,7 +126,7 @@ const ContactForm = () => {
             error={Boolean(errors.message)}
             fullWidth
             id="input-message"
-            label="Message"
+            label={t("message")}
             multiline
             rows={4}
             helperText={errors.message && errors.message.message}
@@ -154,7 +157,7 @@ const ContactForm = () => {
                   gap: ".1rem",
                 }}
               >
-                I agree with
+                {t("I agree with")}
                 <Button
                   variant="text"
                   onClick={handleShowTerms}
@@ -169,7 +172,7 @@ const ContactForm = () => {
                     },
                   }}
                 >
-                  Terms of Use & Privacy Policy
+                  {t("Terms of Use & Privacy Policy")}
                 </Button>
               </Typography>
             </Box>
@@ -189,7 +192,7 @@ const ContactForm = () => {
         disabled={!isValid}
         sx={{ mt: 0.5 }}
       >
-        Submit
+        {t("Submit")}
       </Button>
     </Box>
   );

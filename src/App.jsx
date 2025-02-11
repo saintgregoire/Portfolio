@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import SnackbarMessage from './components/SnackbarMessage';
+import './i18n/i18n';
 import './styles/fonts.css';
 
 function App() {

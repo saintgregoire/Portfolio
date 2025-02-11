@@ -8,8 +8,10 @@ import portfolioImg from "../../../assets/img/projects/portfolio.png";
 import CardSlider from "../components/CardSlider";
 import ProjectCard from "../components/ProjectCard";
 import { Pagination, Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const {t} = useTranslation();
   const projects = [
     {
       id: 1,
@@ -142,7 +144,7 @@ const Projects = () => {
       }}
     >
       <Typography component="h2" variant="h2" sx={{ textAlign: "center" }}>
-        Projects
+        {t("projects")}
       </Typography>
       <Typography
         component="p"
@@ -151,7 +153,7 @@ const Projects = () => {
           textAlign: "center",
         }}
       >
-        Some of the noteworthy projects I have built:
+        {t("projects desc")}
       </Typography>
       <CardSlider swiperSettings={swiperSettings} sx={swiperStyle}>
         {cards}

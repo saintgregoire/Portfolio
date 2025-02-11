@@ -1,9 +1,12 @@
 import { Button, Container, Link, Typography, Box } from "@mui/material";
 import { useContext } from "react";
 import { DialogContext } from "../context/DialogContext";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { setOpenDialog, setContent } = useContext(DialogContext);
+
+  const {t} = useTranslation();
 
   const handleShowLicense = () => {
     setOpenDialog(true);
@@ -46,7 +49,7 @@ const Footer = () => {
           </Link>
         </Typography>
         <Typography variant="body2" sx={{ order: { md: 1, fontSize: '16px', } }}>
-          © 2025. Licensed under&nbsp;
+          © 2025. {t("Licensed under")}&nbsp;
           <Button
             variant="text"
             onClick={handleShowLicense}
@@ -82,7 +85,7 @@ const Footer = () => {
               },
             }}
           >
-            Terms of Use & Privacy Policy
+            {t("Terms of Use & Privacy Policy")}
           </Button>
         </Typography>
       </Container>

@@ -3,8 +3,10 @@ import gif from "../../../assets/img/IMG_2614.gif";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Social from "../components/Social";
 import { pulsation, rotate } from "../../../utils/keyframes";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <Container
       component="section"
@@ -60,7 +62,7 @@ const Hero = () => {
         }}
       >
         <Typography variant="h1" component="h1">
-          Hi, I&apos;m Maksym
+          {t("h1")}
           <Typography
             component="span"
             sx={{
@@ -75,12 +77,7 @@ const Hero = () => {
           </Typography>
         </Typography>
         <Typography component="p" sx={{ mt: "1rem" }}>
-          I&apos;m a Web Developer with expertise in React.js, PHP, and MySQL,
-          focused on creating efficient and visually engaging digital solutions.
-          With a solid foundation in web development, I specialize in crafting
-          user-centric, responsive, and functional applications. Passionate
-          about continuous learning, I aim to enhance user experiences and bring
-          ideas to life through clean and scalable code.
+          {t("bio")}
         </Typography>
         <Typography
           component="p"
@@ -134,7 +131,7 @@ const Hero = () => {
               },
             }}
           ></Typography>
-          Available for new projects
+          {t("availability")}
         </Typography>
         <Social />
       </Box>

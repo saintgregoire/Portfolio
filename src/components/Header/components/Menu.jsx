@@ -7,11 +7,11 @@ import {
   Divider,
 } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-
-const pages = ["About", "Skills", "Projects", "Education", "Recommendations", "Contacts"];
+import { useTranslation } from "react-i18next";
 
 const HeaderMenu = (props) => {
   const { listStyles, menuItemClickFunction, isMobile } = props;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -28,17 +28,17 @@ const HeaderMenu = (props) => {
         </>
       )}
       <MenuList sx={listStyles}>
-        {pages.map((page) => (
+        {t("menu", {returnObjects: true}).map((page) => (
           <MenuItem
-            key={page}
+            key={page.id}
             onClick={menuItemClickFunction}
             sx={{
               ...(isMobile && { justifyContent: "center", height: 48 }),
               borderRadius: "8px",
             }}
           >
-            <Link href={`#${page.toLowerCase()}`} underline="none">
-              {page}
+            <Link href={`#${page.id}`} underline="none">
+              {page.name}
             </Link>
           </MenuItem>
         ))}
@@ -51,7 +51,7 @@ const HeaderMenu = (props) => {
         download
         sx={{ ...(isMobile && { mx: 1 }) }}
       >
-        Download CV
+        {t("download CV")}
       </Button>
     </>
   );

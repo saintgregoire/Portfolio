@@ -12,8 +12,10 @@ import CardSlider from "../components/CardSlider";
 import { Autoplay } from "swiper/modules";
 import FullScreenImage from "../components/FullScreenImage";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Education = () => {
+  const {t} = useTranslation();
   const education = [
     {
       id: 1,
@@ -129,7 +131,7 @@ const Education = () => {
           textAlign: "center",
         }}
       >
-        Education
+        {t("education")}
       </Typography>
       <Typography
         component="p"
@@ -138,8 +140,7 @@ const Education = () => {
           textAlign: "center",
         }}
       >
-        Highlights of my educational background and key qualifications I&apos;ve
-        gained:
+        {t("education desc")}
       </Typography>
       <Box
         component="div"

@@ -1,0 +1,109 @@
+{
+  "menu": [
+    {
+      "name": "About",
+      "id": "about"
+    },
+    {
+      "name": "Skills",
+      "id": "skills"
+    },
+    {
+      "name": "Projects",
+      "id": "projects"
+    },
+    {
+      "name": "Education",
+      "id": "education"
+    },
+    {
+      "name": "Recommendations",
+      "id": "recommendations"
+    },
+    {
+      "name": "Contacts",
+      "id": "contacts"
+    }
+  ],
+  "download CV": "Download CV",
+  "h1": "Hi, I'm Maksym",
+  "bio": "I'm a Web Developer with expertise in React.js, PHP, and MySQL, focused on creating efficient and visually engaging digital solutions. With a solid foundation in web development, I specialize in crafting user-centric, responsive, and functional applications. Passionate about continuous learning, I aim to enhance user experiences and bring ideas to life through clean and scalable code.",
+  "availability": "Available for new projects",
+  "about me": "About me",
+  "my info": [
+    {
+      "id": 1,
+      "title": "I'm",
+      "text": " a passionate and dedicated web developer specializing in Full Stack and Frontend development using React.js, PHP and MySQL. I'm enthusiastic about crafting seamless user experiences and building robust, visually appealing web applications. Clean, efficient code and user-centered design are at the heart of my work."
+    },
+    {
+      "id": 2,
+      "title": "My journey",
+      "text": " as a developer began in 2023, and since then, I've embraced every opportunity to grow and challenge myself. With a strong focus on learning and adapting, I continually explore new technologies and approaches to stay ahead in the ever-evolving world of web development."
+    },
+    {
+      "id": 3,
+      "title": "I have",
+      "text": " a keen interest in understanding user behavior and psychology, which helps me create intuitive and engaging digital experiences for all types of users. Whether it's collaborating on ideas, prototyping, or coding the final product, I enjoy being involved in every stage of the development process."
+    },
+    {
+      "id": 4,
+      "title": "A few quick things",
+      "text": " about me: I'm a progressive thinker, a problem-solver, and always open to new challenges. Oh, and I'm available for new projects — so feel free to reach out! Let's build something amazing together. 😊"
+    }
+  ],
+  "skills": "Skills",
+  "skills desc": "The skills, tools and technologies I am really good at:",
+  "tools": "Tools",
+  "projects": "Projects",
+  "projects desc": "Some of the noteworthy projects I have built:",
+  "education": "Education",
+  "education desc": "Highlights of my educational background and key qualifications I've gained:",
+  "recommendations": "Recommendations",
+  "recommendations desc": "What people are saying about my work and dedication.",
+  "recommendations list": [{
+    "id": 1,
+    "name": "Mari Doucet",
+    "post": "Co-founder Kornog",
+    "relation": "Mari was Maksym's teacher",
+    "text": "Maksym is a brilliant, curious, and determined student. He has a strong commitment to quality work and best practices. His learning abilities are impressive. He is also a driving force within a team, always ready to share his knowledge and challenge his own understanding."
+  },
+  {
+    "id": 2,
+    "name": "Fabrice Vallee",
+    "post": "Career coach",
+    "relation": "Fabrice was Maksym's teacher",
+    "text": "It was a pleasure to support Maxime in developing his web development skills. I particularly appreciated his great autonomy, fast learning ability, and resilience in the face of complexity and the unknown. And finally, his passion for tech! I highly recommend his profile to any organization that needs to innovate and create new technical solutions in a rapidly changing world."
+  },
+  {
+    "id": 3,
+    "name": "Hugues Froger",
+    "post": "Co-founder & developer in Kornog",
+    "relation": "Hugues was Maksym's teacher",
+    "text": "Maksym has been a diligent learner throughout his training at 3W Academy, whether in individual or team projects. His motivation to deeply understand the mechanics and logic of web programming, as well as his constant commitment to achieving an optimized outcome, demonstrate his dedication and involvement. I wish him all the best for the future!"
+  },
+  {
+    "id": 4,
+    "name": "Maxim Hrichina",
+    "post": "Frontend developer",
+    "relation": "Maxim was Maksym's teacher",
+    "text": "I had the pleasure of observing Maxim's impressive progress as he completed the Frontend Basic course with excellence. From start to finish, Maxim demonstrated not only a solid understanding of the material but also a proactive and detail-oriented approach to every task. Maksym consistently delivered high-quality work, meeting and often exceeding expectations. He showcased a strong ability to grasp core frontend concepts and applied them effectively in practical assignments. What stood out the most was his meticulous attention to detail, problem-solving mindset, and unwavering commitment to producing clean and efficient code. In addition to his technical skills, Maksym's professionalism and dedication were evident throughout the course. He approached challenges with enthusiasm and maintained a collaborative attitude, making him a pleasure to work with. I am confident that Maxim will continue to excel as he advances in his frontend development journey. He has the potential to bring significant value to any team or project he joins. I highly recommend him to anyone looking for a skilled and reliable junior frontend developer."
+  },
+  {
+    "id": 5,
+    "name": "Benjamin Haverbeke",
+    "post": "Fullstack developer",
+    "relation": "Benjamin worked with Maksym on the same team",
+    "text": "At the start of the training, Maksym was already capable of creating a professional-level dynamic website—I learned a lot alongside him!"
+  }
+],
+"contacts": "Contacts",
+"contacts desc": "Open to new challenges and exciting projects!<br />Let's connect and create something great together.",
+"name": "Name",
+"email": "Email",
+"message": "Message",
+"I agree with": "I agree with",
+"Terms of Use & Privacy Policy": "Terms of Use & Privacy Policy",
+"Submit": "Submit",
+"Licensed under": "Licensed under"
+}

@@ -3,16 +3,21 @@ import frenchFlag from "../../../assets/img/icons/french.png";
 import englishFlag from "../../../assets/img/icons/eng.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const LanguageBtn = () => {
+  const { i18n } = useTranslation();
+
   const actions = [
     {
       icon: frenchFlag,
       name: "Français",
+      lang: "fr",
     },
     {
       icon: englishFlag,
       name: "English",
+      lang: "eng",
     },
   ];
 
@@ -21,8 +26,10 @@ const LanguageBtn = () => {
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const selectLang = (lang) => {
-    setCurrentLang(lang), handleClose();
+  const selectLang = (icon, lang) => {
+    setCurrentLang(icon);
+    handleClose();
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -95,7 +102,7 @@ const LanguageBtn = () => {
           }
           tooltipTitle={action.name}
           tooltipOpen
-          onClick={() => selectLang(action.icon)}
+          onClick={() => selectLang(action.icon, action.lang)}
         />
       ))}
     </SpeedDial>

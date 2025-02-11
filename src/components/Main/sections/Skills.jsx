@@ -1,7 +1,11 @@
 import { Container, Typography } from "@mui/material";
 import SkillsBox from "../components/SkillsBox";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+
+  const {t} = useTranslation();
+
   return (
     <Container
       component="section"
@@ -13,7 +17,7 @@ const Skills = () => {
       }}
     >
       <Typography component="h2" variant="h2">
-        Skills
+        {t("skills")}
       </Typography>
       <Typography
         component="p"
@@ -21,11 +25,11 @@ const Skills = () => {
           mt: ".5rem",
         }}
       >
-        The skills, tools and technologies I am really good at:
+        {t("skills desc")}
       </Typography>
       <SkillsBox title="Frontend" type="frontend" />
       <SkillsBox title="Backend" type="backend" />
-      <SkillsBox title="Tools" type="tools" />
+      <SkillsBox title={t("tools")} type="tools" />
       <SkillsBox title="CMS" type="cms" />
     </Container>
   );
