@@ -1,6 +1,6 @@
 import { Button, Container, Link, Typography, Box } from "@mui/material";
 import { useContext } from "react";
-import { DialogContext } from "../../context/DialogContext";
+import { DialogContext } from "../context/DialogContext";
 
 const Footer = () => {
   const { setOpenDialog, setContent } = useContext(DialogContext);

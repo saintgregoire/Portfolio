@@ -8,6 +8,7 @@ import { Container, Drawer, Link } from "@mui/material";
 import { useState } from "react";
 import HeaderMenu from "./components/Menu";
 import HideOnScroll from "./components/HideOnScroll";
+import LanguageBtn from "./components/LanguageBtn";
 
 const Header = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         <Container component="div" maxWidth="xl">
           <Toolbar
             sx={{
-              px: {xs: 0}
+              px: { xs: 0 },
             }}
           >
             <Link
@@ -58,6 +59,7 @@ const Header = () => {
             )}
           </Toolbar>
         </Container>
+        <LanguageBtn />
       </AppBar>
     </HideOnScroll>
   );

@@ -1,6 +1,6 @@
 import { Snackbar, Alert } from "@mui/material";
 import { useContext } from "react";
-import { SnackbarContext } from "../../context/SnackbarContext";
+import { SnackbarContext } from "../context/SnackbarContext";
 
 const SnackbarMessage = () => {
   const { openSnack, setOpenSnack, result } = useContext(SnackbarContext);
