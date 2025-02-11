@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <HideOnScroll>
       <AppBar sx={{ background: "white" }}>
-        <Container component="div" maxWidth="xl">
+        <Container component="div" maxWidth="xl" sx={{position: 'relative'}}>
           <Toolbar
             sx={{
               px: { xs: 0 },
@@ -58,8 +58,8 @@ const Header = () => {
               <HeaderMenu listStyles={{ display: "flex", pr: "1rem" }} />
             )}
           </Toolbar>
+          <LanguageBtn />
         </Container>
-        <LanguageBtn />
       </AppBar>
     </HideOnScroll>
   );
