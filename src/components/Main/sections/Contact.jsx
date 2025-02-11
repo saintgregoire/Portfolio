@@ -9,7 +9,7 @@ const Contact = () => {
       maxWidth="xl"
       id="contacts"
       sx={{
-        py: "2rem",
+        py: "4rem",
         textAlign: "center",
         display: 'flex',
         flexDirection: 'column',

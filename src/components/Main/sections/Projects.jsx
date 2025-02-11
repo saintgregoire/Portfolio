@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import hlegalImg from "../../../assets/img/projects/hlegal.png";
 import pizzaDayImg from "../../../assets/img/projects/pizzaDay.png";
 import estateinImg from "../../../assets/img/projects/estatein.png";
@@ -131,13 +131,14 @@ const Projects = () => {
   ));
 
   return (
+    <Box component="section"
+    id="projects"
+    sx={{background: "rgb(226, 226, 226, 30%)",}}>
     <Container
-      component="section"
+      component="div"
       maxWidth="xl"
-      id="projects"
       sx={{
-        py: "2rem",
-        background: "rgb(226, 226, 226, 30%)",
+        py: "4rem",
       }}
     >
       <Typography component="h2" variant="h2" sx={{ textAlign: "center" }}>
@@ -156,6 +157,7 @@ const Projects = () => {
         {cards}
       </CardSlider>
     </Container>
+    </Box>
   );
 };
 

@@ -120,7 +120,7 @@ const Education = () => {
       component="section"
       maxWidth="xl"
       id="education"
-      sx={{ py: "2rem" }}
+      sx={{ py: "4rem" }}
     >
       <Typography
         component="h2"

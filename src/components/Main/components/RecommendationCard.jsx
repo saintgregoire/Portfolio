@@ -26,7 +26,7 @@ const RecommendationCard = (props) => {
 
   useEffect(() => {
     if (cardRef.current) {
-      setShowExpandBtn(cardRef.current.scrollHeight > 301);
+      setShowExpandBtn(cardRef.current.scrollHeight > 315);
     }
   }, []);
 
@@ -67,7 +67,7 @@ const RecommendationCard = (props) => {
               <LinkedInIcon />
             </Link>
           }
-          title={name}
+          title={<Typography>{name}</Typography>}
           subheader={
             <>
               {post}

@@ -135,6 +135,7 @@ const SkillsBox = (props) => {
         sx={{
           background: "rgb(226, 226, 226, 30%)",
           py: ".5rem",
+          borderRadius: '25px',
         }}
       >
         {title}

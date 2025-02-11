@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import RecommendationCard from "../components/RecommendationCard";
 import CardSlider from "../components/CardSlider";
 import { Pagination, Navigation } from "swiper/modules";
@@ -87,13 +87,14 @@ const Recommendations = () => {
   };
 
   return (
+    <Box component="section"
+    id="recommendations"
+    sx={{background: "rgb(226, 226, 226, 30%)",}}>
     <Container
-      component="section"
+      component="div"
       maxWidth="xl"
-      id="recommendations"
       sx={{
-        py: "2rem",
-        background: "rgb(226, 226, 226, 30%)",
+        py: "4rem",
       }}
     >
       <Typography
@@ -119,6 +120,7 @@ const Recommendations = () => {
         {cards}
       </CardSlider>
     </Container>
+    </Box>
   );
 };
 

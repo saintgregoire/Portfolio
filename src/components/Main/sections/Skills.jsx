@@ -8,7 +8,7 @@ const Skills = () => {
       maxWidth="xl"
       id="skills"
       sx={{
-        py: "2rem",
+        py: "4rem",
         textAlign: "center",
       }}
     >
