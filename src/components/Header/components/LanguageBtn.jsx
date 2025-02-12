@@ -2,7 +2,7 @@ import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import frenchFlag from "../../../assets/img/icons/french.png";
 import englishFlag from "../../../assets/img/icons/eng.png";
 import LanguageIcon from "@mui/icons-material/Language";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageBtn = () => {
@@ -17,17 +17,24 @@ const LanguageBtn = () => {
     {
       icon: englishFlag,
       name: "English",
-      lang: "eng",
+      lang: "en",
     },
   ];
 
   const [open, setOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState(englishFlag);
+  const [currentLang, setCurrentLang] = useState(null);
+
+  useEffect(() => {
+    if(i18n.language === "fr"){
+      setCurrentLang(frenchFlag);
+    }else{
+      setCurrentLang(englishFlag);
+    }
+  },[i18n.language]);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const selectLang = (icon, lang) => {
-    setCurrentLang(icon);
+  const selectLang = (lang) => {
     handleClose();
     i18n.changeLanguage(lang);
   };
@@ -102,7 +109,7 @@ const LanguageBtn = () => {
           }
           tooltipTitle={action.name}
           tooltipOpen
-          onClick={() => selectLang(action.icon, action.lang)}
+          onClick={() => selectLang(action.lang)}
         />
       ))}
     </SpeedDial>

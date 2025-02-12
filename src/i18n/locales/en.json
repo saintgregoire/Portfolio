@@ -1,4 +1,5 @@
 {
+  "title": "Web Development - Frontend, Backend, Full Stack, Website Creation in Rennes. Maksym Voznichka",
   "menu": [
     {
       "name": "About",
@@ -219,8 +220,8 @@
   "Liability": "3. Liability <br /> The website owner is not responsible for any direct or indirect damages arising from the use of the site, including but not limited to errors or omissions in the content.",
   "Changes to Terms": "4. Changes to Terms <br /> The website owner reserves the right to modify the terms of use of the site at any time without prior notice. It is recommended to regularly check the current terms of use.",
   "Privacy Policy": "Privacy Policy",
-  "Data Collection": "1. Data Collection <br /> We collect users name and email through the contact form on the website to send notifications and messages.",
-  "Data Usage": "2. Data Usage <br /> The collected data is used solely for sending notifications and communicating with the user. We do not share data with third parties.",
-  "Data Storage": "3. Data Storage <br /> All data is stored on the server. Data transmission is done through EmailJs, ensuring secure transmission.",
-  "Data Security": "4. Data Security <br /> We take all necessary measures to protect the data; however, we cannot guarantee the complete security of data during its transmission over the internet."
+  "Data Collection": "1. Data Collection <br /> We collect users' name and email through the contact form on the website to send notifications and messages. We may also collect language preference data to improve user experience by displaying content in the user's preferred language.",
+  "Data Usage": "2. Data Usage <br /> The collected data is used solely for sending notifications and communicating with the user. We do not share data with third parties. Language preference data is used only to personalize the website experience and is not shared with any external parties.",
+  "Data Storage": "3. Data Storage <br /> All data is stored on the server. Data transmission is done through EmailJs, ensuring secure transmission. Language preference data may also be stored in cookies or localStorage for convenience in future visits.",
+  "Data Security": "4. Data Security <br /> We take all necessary measures to protect the data; however, we cannot guarantee the complete security of data during its transmission over the internet. This also applies to any data related to language preferences stored in cookies or localStorage."
 }
