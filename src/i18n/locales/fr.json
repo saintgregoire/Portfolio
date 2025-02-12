@@ -1,3 +1,209 @@
 {
-  "h1": "Salut, je suis Maksym"
+  "menu": [
+    {
+      "name": "À propos",
+      "id": "about"
+    },
+    {
+      "name": "Compétences",
+      "id": "skills"
+    },
+    {
+      "name": "Projets",
+      "id": "projects"
+    },
+    {
+      "name": "Éducation",
+      "id": "education"
+    },
+    {
+      "name": "Recommandations",
+      "id": "recommendations"
+    },
+    {
+      "name": "Contacts",
+      "id": "contacts"
+    }
+  ],
+  "download CV": "Télécharger le CV",
+  "h1": "Salut, je suis Maksym",
+  "bio": "Je suis un développeur web spécialisé en React.js, PHP et MySQL, axé sur la création de solutions numériques efficaces et visuellement attrayantes. Avec une solide base en développement web, je conçois des applications centrées sur l'utilisateur, réactives et fonctionnelles. Passionné par l'apprentissage continu, mon objectif est d'améliorer l'expérience utilisateur et de donner vie aux idées grâce à un code propre et évolutif.",
+  "availability": "Disponible pour de nouveaux projets",
+  "about me": "À propos de moi",
+  "my info": [
+    {
+      "id": 1,
+      "title": "Je suis",
+      "text": " un développeur web passionné et dévoué, spécialisé en développement Full Stack et Frontend avec React.js, PHP et MySQL. J'adore concevoir des expériences utilisateur fluides et développer des applications web robustes et attrayantes. Un code propre, efficace et une approche centrée sur l'utilisateur sont au cœur de mon travail."
+    },
+    {
+      "id": 2,
+      "title": "Mon parcours",
+      "text": " en tant que développeur a commencé en 2023, et depuis, j'ai saisi chaque opportunité pour évoluer et me challenger. Toujours curieux et prêt à apprendre, j'explore continuellement de nouvelles technologies et approches pour rester à la pointe du développement web."
+    },
+    {
+      "id": 3,
+      "title": "J'ai",
+      "text": " un grand intérêt pour la compréhension du comportement et de la psychologie des utilisateurs, ce qui m'aide à créer des expériences numériques intuitives et engageantes. Que ce soit en collaborant sur des idées, en réalisant des prototypes ou en codant le produit final, j'aime être impliqué à toutes les étapes du développement."
+    },
+    {
+      "id": 4,
+      "title": "Quelques faits rapides",
+      "text": " sur moi : je suis un penseur progressiste, un résolveur de problèmes et toujours ouvert à de nouveaux défis. Ah, et je suis disponible pour de nouveaux projets — alors n'hésitez pas à me contacter ! Construisons quelque chose d'incroyable ensemble. 😊"
+    }
+  ],
+  "skills": "Compétences",
+  "skills desc": "Les compétences, outils et technologies que je maîtrise :",
+  "tools": "Outils",
+  "projects": "Projets",
+  "projects desc": "Quelques projets remarquables que j'ai réalisés :",
+  "education": "Éducation",
+  "education desc": "Points forts de mon parcours éducatif et qualifications clés que j'ai acquises :",
+  "recommendations": "Recommandations",
+  "recommendations desc": "Ce que les gens disent de mon travail et de mon engagement.",
+  "recommendations list": [
+    {
+      "id": 1,
+      "name": "Mari Doucet",
+      "post": "Co-fondateur Kornog",
+      "relation": "Mari était le professeur de Maksym",
+      "text": "Maksym est un étudiant brillant, curieux et déterminé. Il a un immense souci du travail bien fait et de la bonne pratique. Ses capacités d'apprentissage sont impressionnantes. Il est également un élément moteur dans une équipe, prêt à partager son savoir et challenger ses connaissances."
+    },
+    {
+      "id": 2,
+      "name": "Fabrice Vallee",
+      "post": "Coach Professionnel",
+      "relation": "Fabrice était le professeur de Maksym",
+      "text": "C'était un plaisir d'accompagner Maxime dans sa montée en compétences en développement web. J'ai particulièrement apprécié sa grande automonie, sa vitesse d'apprentissage, sa capacitié de résilience face à la complexité, à l'inconnu. Et enfin sa passion pour la tech ! Je recommande son profil à toute organisation ayant besoin d'innover, de créer de nouvelles solutions techniques dans un monde qui change rapidement."
+    },
+    {
+      "id": 3,
+      "name": "Hugues Froger",
+      "post": "Cofondateur & Développeur web chez Kornog",
+      "relation": "Hugues était le professeur de Maksym",
+      "text": "Maksym a été un apprenant assidu tout au long de sa formation à la 3W Academy, que ce soit dans le cadre de travaux individuels ou en équipe. Sa motivation à comprendre en profondeur les mécanismes et la logique de la programmation web, ainsi que son souci constant d'aboutir à une production optimisée, témoignent de son sérieux et de son implication. Je lui souhaite tout le meilleur pour la suite !"
+    },
+    {
+      "id": 4,
+      "name": "Maxim Hrichina",
+      "post": "Développeur Frontend",
+      "relation": "Maxim était le professeur de Maksym",
+      "text": "J'ai eu le plaisir d'observer les progrès impressionnants de Maxim lorsqu'il a suivi avec excellence le cours Frontend Basic. Du début à la fin, Maxim a démontré non seulement une solide compréhension du matériel, mais aussi une approche proactive et méticuleuse dans chaque tâche. Maksym a constamment livré un travail de haute qualité, répondant et souvent dépassant les attentes. Il a montré une forte capacité à assimiler les concepts fondamentaux du développement frontend et à les appliquer efficacement dans des projets pratiques. Ce qui m'a le plus marqué, c'est son souci du détail, son esprit de résolution de problèmes et son engagement constant à produire un code propre et efficace. En plus de ses compétences techniques, le professionnalisme et le dévouement de Maksym étaient évidents tout au long du cours. Il a abordé les défis avec enthousiasme et a maintenu une attitude collaborative, ce qui a fait de lui un plaisir à côtoyer. Je suis convaincu que Maxim continuera à exceller dans son parcours en développement frontend. Il a le potentiel d'apporter une valeur significative à toute équipe ou projet qu'il rejoindra. Je le recommande vivement à toute personne recherchant un développeur frontend junior compétent et fiable."
+    },
+    {
+      "id": 5,
+      "name": "Benjamin Haverbeke",
+      "post": "Développeur Fullstack",
+      "relation": "Benjamin a travaillé avec Maksym dans la même équipe",
+      "text": "Dès le début de la formation, Maksym était déjà capable de créer un site web dynamique de niveau professionnel — j'ai beaucoup appris à ses côtés !"
+    }
+  ],
+  "contacts": "Contacts",
+  "contacts desc": "Ouvert aux nouveaux défis et projets passionnants !<br />Connectons-nous et créons quelque chose de génial ensemble.",
+  "name": "Nom",
+  "email": "Email",
+  "message": "Message",
+  "I agree with": "J'accepte les",
+  "Terms of Use & Privacy Policy": "Conditions d'utilisation et Politique de confidentialité",
+  "Submit": "Envoyer",
+  "Licensed under": "Sous",
+  "projects list": [
+    {
+      "id": 1,
+      "title": "Pizza Day",
+      "description": "Livraison de pizza",
+      "img": "pizzaDayImg",
+      "badges": [
+        "React",
+        "CSS",
+        "Vite",
+        "React Hook Form",
+        "Zod",
+        "React Router",
+        "Rest Api"
+      ],
+      "github": "https://github.com/saintgregoire/ReactHillel",
+      "site": "https://resplendent-hotteok-54ec2d.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "Estatein",
+      "description": "Agence immobilière",
+      "img": "estateinImg",
+      "badges": [
+        "HTML",
+        "Sass",
+        "Bootstrap",
+        "JavaScript",
+        "SwiperJs",
+        "PHP",
+        "Twig",
+        "MySql"
+      ],
+      "github": "https://github.com/saintgregoire/RealEstateAgency",
+      "site": "https://estatein.alwaysdata.net/"
+    },
+    {
+      "id": 3,
+      "title": "Mon portfolio",
+      "description": "Site web de portfolio",
+      "img": "portfolioImg",
+      "badges": ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
+      "github": "https://github.com/saintgregoire/Portfolio",
+      "site": "#"
+    },
+    {
+      "id": 4,
+      "title": "Charismo",
+      "description": "E-commerce",
+      "img": "charismoImg",
+      "badges": ["React", "Sass", "SwiperJs", "React Router", "Vite"],
+      "github": "https://github.com/saintgregoire/Charismo-React",
+      "site": "https://66dc7af221f96afe439da0bd--snazzy-zabaione-19c86e.netlify.app/"
+    },
+    {
+      "id": 5,
+      "title": "Pierre-papier-ciseaux avec Orç",
+      "description": "Jeu",
+      "img": "orkImg",
+      "badges": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/saintgregoire/Game",
+      "site": "https://663243a3a64595e259d38551--zippy-nasturtium-34ac5e.netlify.app/"
+    },
+    {
+      "id": 6,
+      "title": "Hlegal",
+      "description": "Cabinet d'avocats",
+      "img": "hlegalImg",
+      "badges": ["HTML", "Sass", "JavaScript", "Gulp"],
+      "github": "https://github.com/saintgregoire/final",
+      "site": "https://663e6d3bf60fc1363789b4ad--stupendous-cuchufli-b2b986.netlify.app/"
+    }
+  ],
+  "education list": [
+    {
+      "id": 1,
+      "school": "Hillel IT School",
+      "course": "Frontend Basic",
+      "period": "Nov. 2023 - Jan. 2024",
+      "description": "Cette formation m'a fourni des compétences essentielles en front-end, incluant HTML, CSS, SCSS et Git/GitHub pour le contrôle de version et la collaboration, posant une base solide pour mon parcours en développement web.",
+      "img": "hillel"
+    },
+    {
+      "id": 2,
+      "school": "3W Academy",
+      "course": "Développement Web et Mobile (BAC+2)",
+      "period": "Fév. 2024 - Nov. 2024",
+      "description": "Front-end : Maîtrise de HTML5, CSS (Sass), Bootstrap et JavaScript pour des interfaces utilisateur dynamiques.<br />Back-end : Expérience en PHP, MySQL et Twig pour le développement d'applications web et l'optimisation des bases de données.<br />Gestion de projet : Connaissance des méthodologies Agile et des outils de collaboration en équipe.<br />Compétences générales : Développement Full-stack avec les meilleures pratiques en front-end et back-end.",
+      "img": "wa"
+    },
+    {
+      "id": 3,
+      "school": "Hillel IT School",
+      "course": "React",
+      "period": "Nov. 2024 - Jan. 2025",
+      "description": "Pendant ma formation React, j'ai appris à créer des interfaces utilisateur dynamiques et performantes en comprenant les composants, les props et l'état, en utilisant des hooks pour la gestion du cycle de vie et de l'état, et en implémentant le routage avec React Router pour les SPAs. J'ai acquis de l'expérience dans la récupération de données en temps réel avec des APIs (fetch, Axios), la configuration de projets avec Vite, l'optimisation des performances et le respect des meilleures pratiques. J'ai également travaillé avec MUI (Material-UI) pour concevoir des interfaces et géré des formulaires avec React Hook Form pour une validation fluide.",
+      "img": "hillel"
+    }
+  ]
 }

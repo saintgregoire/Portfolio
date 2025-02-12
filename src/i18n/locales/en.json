@@ -61,49 +61,151 @@
   "education desc": "Highlights of my educational background and key qualifications I've gained:",
   "recommendations": "Recommendations",
   "recommendations desc": "What people are saying about my work and dedication.",
-  "recommendations list": [{
-    "id": 1,
-    "name": "Mari Doucet",
-    "post": "Co-founder Kornog",
-    "relation": "Mari was Maksym's teacher",
-    "text": "Maksym is a brilliant, curious, and determined student. He has a strong commitment to quality work and best practices. His learning abilities are impressive. He is also a driving force within a team, always ready to share his knowledge and challenge his own understanding."
-  },
-  {
-    "id": 2,
-    "name": "Fabrice Vallee",
-    "post": "Career coach",
-    "relation": "Fabrice was Maksym's teacher",
-    "text": "It was a pleasure to support Maxime in developing his web development skills. I particularly appreciated his great autonomy, fast learning ability, and resilience in the face of complexity and the unknown. And finally, his passion for tech! I highly recommend his profile to any organization that needs to innovate and create new technical solutions in a rapidly changing world."
-  },
-  {
-    "id": 3,
-    "name": "Hugues Froger",
-    "post": "Co-founder & developer in Kornog",
-    "relation": "Hugues was Maksym's teacher",
-    "text": "Maksym has been a diligent learner throughout his training at 3W Academy, whether in individual or team projects. His motivation to deeply understand the mechanics and logic of web programming, as well as his constant commitment to achieving an optimized outcome, demonstrate his dedication and involvement. I wish him all the best for the future!"
-  },
-  {
-    "id": 4,
-    "name": "Maxim Hrichina",
-    "post": "Frontend developer",
-    "relation": "Maxim was Maksym's teacher",
-    "text": "I had the pleasure of observing Maxim's impressive progress as he completed the Frontend Basic course with excellence. From start to finish, Maxim demonstrated not only a solid understanding of the material but also a proactive and detail-oriented approach to every task. Maksym consistently delivered high-quality work, meeting and often exceeding expectations. He showcased a strong ability to grasp core frontend concepts and applied them effectively in practical assignments. What stood out the most was his meticulous attention to detail, problem-solving mindset, and unwavering commitment to producing clean and efficient code. In addition to his technical skills, Maksym's professionalism and dedication were evident throughout the course. He approached challenges with enthusiasm and maintained a collaborative attitude, making him a pleasure to work with. I am confident that Maxim will continue to excel as he advances in his frontend development journey. He has the potential to bring significant value to any team or project he joins. I highly recommend him to anyone looking for a skilled and reliable junior frontend developer."
-  },
-  {
-    "id": 5,
-    "name": "Benjamin Haverbeke",
-    "post": "Fullstack developer",
-    "relation": "Benjamin worked with Maksym on the same team",
-    "text": "At the start of the training, Maksym was already capable of creating a professional-level dynamic website—I learned a lot alongside him!"
-  }
-],
-"contacts": "Contacts",
-"contacts desc": "Open to new challenges and exciting projects!<br />Let's connect and create something great together.",
-"name": "Name",
-"email": "Email",
-"message": "Message",
-"I agree with": "I agree with",
-"Terms of Use & Privacy Policy": "Terms of Use & Privacy Policy",
-"Submit": "Submit",
-"Licensed under": "Licensed under"
+  "recommendations list": [
+    {
+      "id": 1,
+      "name": "Mari Doucet",
+      "post": "Co-founder Kornog",
+      "relation": "Mari was Maksym's teacher",
+      "text": "Maksym is a brilliant, curious, and determined student. He has a strong commitment to quality work and best practices. His learning abilities are impressive. He is also a driving force within a team, always ready to share his knowledge and challenge his own understanding."
+    },
+    {
+      "id": 2,
+      "name": "Fabrice Vallee",
+      "post": "Career coach",
+      "relation": "Fabrice was Maksym's teacher",
+      "text": "It was a pleasure to support Maxime in developing his web development skills. I particularly appreciated his great autonomy, fast learning ability, and resilience in the face of complexity and the unknown. And finally, his passion for tech! I highly recommend his profile to any organization that needs to innovate and create new technical solutions in a rapidly changing world."
+    },
+    {
+      "id": 3,
+      "name": "Hugues Froger",
+      "post": "Co-founder & developer in Kornog",
+      "relation": "Hugues was Maksym's teacher",
+      "text": "Maksym has been a diligent learner throughout his training at 3W Academy, whether in individual or team projects. His motivation to deeply understand the mechanics and logic of web programming, as well as his constant commitment to achieving an optimized outcome, demonstrate his dedication and involvement. I wish him all the best for the future!"
+    },
+    {
+      "id": 4,
+      "name": "Maxim Hrichina",
+      "post": "Frontend developer",
+      "relation": "Maxim was Maksym's teacher",
+      "text": "I had the pleasure of observing Maxim's impressive progress as he completed the Frontend Basic course with excellence. From start to finish, Maxim demonstrated not only a solid understanding of the material but also a proactive and detail-oriented approach to every task. Maksym consistently delivered high-quality work, meeting and often exceeding expectations. He showcased a strong ability to grasp core frontend concepts and applied them effectively in practical assignments. What stood out the most was his meticulous attention to detail, problem-solving mindset, and unwavering commitment to producing clean and efficient code. In addition to his technical skills, Maksym's professionalism and dedication were evident throughout the course. He approached challenges with enthusiasm and maintained a collaborative attitude, making him a pleasure to work with. I am confident that Maxim will continue to excel as he advances in his frontend development journey. He has the potential to bring significant value to any team or project he joins. I highly recommend him to anyone looking for a skilled and reliable junior frontend developer."
+    },
+    {
+      "id": 5,
+      "name": "Benjamin Haverbeke",
+      "post": "Fullstack developer",
+      "relation": "Benjamin worked with Maksym on the same team",
+      "text": "At the start of the training, Maksym was already capable of creating a professional-level dynamic website—I learned a lot alongside him!"
+    }
+  ],
+  "contacts": "Contacts",
+  "contacts desc": "Open to new challenges and exciting projects!<br />Let's connect and create something great together.",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "I agree with": "I agree with",
+  "Terms of Use & Privacy Policy": "Terms of Use & Privacy Policy",
+  "Submit": "Submit",
+  "Licensed under": "Licensed under",
+  "projects list": [
+    {
+      "id": 1,
+      "title": "Pizza Day",
+      "description": "Pizza Delivery",
+      "img": "pizzaDayImg",
+      "badges": [
+        "React",
+        "CSS",
+        "Vite",
+        "React Hook Form",
+        "Zod",
+        "React Router",
+        "Rest Api"
+      ],
+      "github": "https://github.com/saintgregoire/ReactHillel",
+      "site": "https://resplendent-hotteok-54ec2d.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "Estatein",
+      "description": "Real Estate Agency",
+      "img": "estateinImg",
+      "badges": [
+        "HTML",
+        "Sass",
+        "Bootstrap",
+        "JavaScript",
+        "SwiperJs",
+        "PHP",
+        "Twig",
+        "MySql"
+      ],
+      "github": "https://github.com/saintgregoire/RealEstateAgency",
+      "site": "https://estatein.alwaysdata.net/"
+    },
+    {
+      "id": 3,
+      "title": "My Portfolio",
+      "description": "Portfolio website",
+      "img": "portfolioImg",
+      "badges": ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
+      "github": "https://github.com/saintgregoire/Portfolio",
+      "site": "#"
+    },
+    {
+      "id": 4,
+      "title": "Charismo",
+      "description": "E-commerce",
+      "img": "charismoImg",
+      "badges": ["React", "Sass", "SwiperJs", "React Router", "Vite"],
+      "github": "https://github.com/saintgregoire/Charismo-React",
+      "site": "https://66dc7af221f96afe439da0bd--snazzy-zabaione-19c86e.netlify.app/"
+    },
+    {
+      "id": 5,
+      "title": "Rock-paper-scissors with Orс",
+      "description": "Desktop game",
+      "img": "orkImg",
+      "badges": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/saintgregoire/Game",
+      "site": "https://663243a3a64595e259d38551--zippy-nasturtium-34ac5e.netlify.app/"
+    },
+    {
+      "id": 6,
+      "title": "Hlegal",
+      "description": "Law company",
+      "img": "hlegalImg",
+      "badges": ["HTML", "Sass", "JavaScript", "Gulp"],
+      "github": "https://github.com/saintgregoire/final",
+      "site": "https://663e6d3bf60fc1363789b4ad--stupendous-cuchufli-b2b986.netlify.app/"
+    }
+  ],
+  "education list": [
+    {
+      "id": 1,
+      "school": "Hillel IT School",
+      "course": "Frontend Basic",
+      "period": "Nov. 2023 - Jan. 2024",
+      "description":
+        "This training provided essential front-end skills, including HTML, CSS, SCSS, and Git/GitHub for version control and collaboration, laying a solid foundation for my web development journey.",
+      "img": "hillel"
+    },
+    {
+      "id": 2,
+      "school": "3W Academy",
+      "course": "Web and Mobile Development (BAC+2)",
+      "period": "Feb. 2024 - Nov. 2024",
+        "description": "Front-end: Proficient in HTML5, CSS (Sass), Bootstrap and JavaScript for dynamic user interfaces.<br />Back-end: Experienced in PHP, MySQL and Twig for web app development and database optimization.<br />Project management: Knowledge of Agile methodologies and tools for team collaboration.<br />General skills: Full-stack development with best practices in both front-end and back-end.",
+      "img": "wa"
+    },
+    {
+      "id": 3,
+      "school": "Hillel IT School",
+      "course": "React",
+      "period": "Nov. 2024 - Jan. 2025",
+      "description":
+        "During my React training, I learned to build dynamic, high-performance UIs by understanding components, props, and state, using hooks for lifecycle and state management, and implementing routing with React Router for SPAs. I gained experience in fetching real-time data with APIs (fetch, Axios), setting up projects with Vite, optimizing performance, and following best practices. I also worked with MUI (Material-UI) to design UIs and managed forms with React Hook Form for smooth validation.",
+      "img": "hillel"
+    }
+  ]
 }

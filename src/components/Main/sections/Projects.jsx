@@ -11,80 +11,16 @@ import { Pagination, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const {t} = useTranslation();
-  const projects = [
-    {
-      id: 1,
-      title: "Pizza Day",
-      description: "Pizza Delivery",
-      img: pizzaDayImg,
-      badges: [
-        "React",
-        "CSS",
-        "Vite",
-        "React Hook Form",
-        "Zod",
-        "React Router",
-        "Rest Api",
-      ],
-      github: "https://github.com/saintgregoire/ReactHillel",
-      site: "https://resplendent-hotteok-54ec2d.netlify.app/",
-    },
-    {
-      id: 2,
-      title: "Estatein",
-      description: "Real Estate Agency",
-      img: estateinImg,
-      badges: [
-        "HTML",
-        "Sass",
-        "Bootstrap",
-        "JavaScript",
-        "SwiperJs",
-        "PHP",
-        "Twig",
-        "MySql",
-      ],
-      github: "https://github.com/saintgregoire/RealEstateAgency",
-      site: "https://estatein.alwaysdata.net/",
-    },
-    {
-      id: 3,
-      title: "My Portfolio",
-      description: "Portfolio website",
-      img: portfolioImg,
-      badges: ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
-      github: "https://github.com/saintgregoire/Portfolio",
-      site: null,
-    },
-    {
-      id: 4,
-      title: "Charismo",
-      description: "E-commerce",
-      img: charismoImg,
-      badges: ["React", "Sass", "SwiperJs", "React Router", "Vite"],
-      github: "https://github.com/saintgregoire/Charismo-React",
-      site: "https://66dc7af221f96afe439da0bd--snazzy-zabaione-19c86e.netlify.app/",
-    },
-    {
-      id: 5,
-      title: "Rock-paper-scissors with Orс",
-      description: "Desktop game",
-      img: orkImg,
-      badges: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/saintgregoire/Game",
-      site: "https://663243a3a64595e259d38551--zippy-nasturtium-34ac5e.netlify.app/",
-    },
-    {
-      id: 6,
-      title: "Hlegal",
-      description: "Law company",
-      img: hlegalImg,
-      badges: ["HTML", "Sass", "JavaScript", "Gulp"],
-      github: "https://github.com/saintgregoire/final",
-      site: "https://663e6d3bf60fc1363789b4ad--stupendous-cuchufli-b2b986.netlify.app/",
-    },
-  ];
+  const { t } = useTranslation(); 
+  
+  const images = {
+    hlegalImg: hlegalImg,
+    pizzaDayImg: pizzaDayImg,
+    estateinImg: estateinImg,
+    charismoImg: charismoImg,
+    orkImg: orkImg,
+    portfolioImg: portfolioImg
+  };
 
   const swiperSettings = {
     style: { paddingBottom: "3rem" },
@@ -120,45 +56,45 @@ const Projects = () => {
     },
   };
 
-  const cards = projects.map((item) => (
-    <ProjectCard
-      key={item.id}
-      title={item.title}
-      description={item.description}
-      img={item.img}
-      badges={item.badges}
-      github={item.github}
-      site={item.site}
-    />
-  ));
-
   return (
-    <Box component="section"
-    id="projects"
-    sx={{background: "rgb(226, 226, 226, 30%)",}}>
-    <Container
-      component="div"
-      maxWidth="xl"
-      sx={{
-        py: "4rem",
-      }}
+    <Box
+      component="section"
+      id="projects"
+      sx={{ background: "rgb(226, 226, 226, 30%)" }}
     >
-      <Typography component="h2" variant="h2" sx={{ textAlign: "center" }}>
-        {t("projects")}
-      </Typography>
-      <Typography
-        component="p"
+      <Container
+        component="div"
+        maxWidth="xl"
         sx={{
-          mt: ".5rem",
-          textAlign: "center",
+          py: "4rem",
         }}
       >
-        {t("projects desc")}
-      </Typography>
-      <CardSlider swiperSettings={swiperSettings} sx={swiperStyle}>
-        {cards}
-      </CardSlider>
-    </Container>
+        <Typography component="h2" variant="h2" sx={{ textAlign: "center" }}>
+          {t("projects")}
+        </Typography>
+        <Typography
+          component="p"
+          sx={{
+            mt: ".5rem",
+            textAlign: "center",
+          }}
+        >
+          {t("projects desc")}
+        </Typography>
+        <CardSlider swiperSettings={swiperSettings} sx={swiperStyle}>
+          {t("projects list", {returnObjects: true}).map((item) => (
+            <ProjectCard
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              img={images[item.img]}
+              badges={item.badges}
+              github={item.github}
+              site={item.site}
+            />
+          ))}
+        </CardSlider>
+      </Container>
     </Box>
   );
 };

@@ -16,48 +16,14 @@ import { useTranslation } from "react-i18next";
 
 const Education = () => {
   const {t} = useTranslation();
-  const education = [
-    {
-      id: 1,
-      school: "Hillel IT School",
-      course: "Frontend Basic",
-      period: "Nov. 2023 - Jan. 2024",
-      description:
-        "This training provided essential front-end skills, including HTML, CSS, SCSS, and Git/GitHub for version control and collaboration, laying a solid foundation for my web development journey.",
-      img: hillel,
-    },
-    {
-      id: 2,
-      school: "3W Academy",
-      course: "Web and Mobile Development (BAC+2)",
-      period: "Feb. 2024 - Nov. 2024",
-      description: (
-        <>
-          Front-end: Proficient in HTML5, CSS (Sass), Bootstrap and JavaScript
-          for dynamic user interfaces.
-          <br />
-          Back-end: Experienced in PHP, MySQL and Twig for web app development
-          and database optimization.
-          <br />
-          Project management: Knowledge of Agile methodologies and tools for
-          team collaboration.
-          <br />
-          General skills: Full-stack development with best practices in both
-          front-end and back-end.
-        </>
-      ),
-      img: wa,
-    },
-    {
-      id: 3,
-      school: "Hillel IT School",
-      course: "React",
-      period: "Nov. 2024 - Jan. 2025",
-      description:
-        "During my React training, I learned to build dynamic, high-performance UIs by understanding components, props, and state, using hooks for lifecycle and state management, and implementing routing with React Router for SPAs. I gained experience in fetching real-time data with APIs (fetch, Axios), setting up projects with Vite, optimizing performance, and following best practices. I also worked with MUI (Material-UI) to design UIs and managed forms with React Hook Form for smooth validation.",
-      img: hillel,
-    },
-  ];
+
+  const schoolImg = {
+    hillel: hillel,
+    wa: wa
+  };
+
+  const data = t("education list", { returnObjects: true });
+  const dataArray = Object.values(data);
 
   const diplomasImg = [
     {
@@ -161,15 +127,15 @@ const Education = () => {
             width: "100%",
           }}
         >
-          {education
+          {dataArray
             .sort((a, b) => b.id - a.id)
             .map((item) => (
               <EducationCard
                 key={item.id}
                 title={item.school}
                 coursName={item.course}
-                desc={item.description}
-                img={item.img}
+                desc={<span dangerouslySetInnerHTML={{ __html: item.description }} />}
+                img={schoolImg[item.img]}
                 date={item.period}
               />
             ))}
