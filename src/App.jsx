@@ -7,7 +7,7 @@ import SnackbarMessage from "./components/SnackbarMessage";
 import "./i18n/i18n";
 import "./styles/fonts.css";
 import { useTranslation } from "react-i18next";
-import CookieSnackbar from "./components/CookieSnackbar";
+import CookieConsent from "./components/CookieConsent";
 
 function App() {
   const { i18n, t } = useTranslation();
@@ -27,7 +27,7 @@ function App() {
       <Footer />
       <SnackbarMessage />
       <DialogMessage />
-      <CookieSnackbar />
+      <CookieConsent />
     </>
   );
 }

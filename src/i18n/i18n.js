@@ -5,6 +5,10 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from './locales/en.json';
 import frTranslation from './locales/fr.json';
 
+function userConsentedToCookies() {
+  return localStorage.getItem("cookiesConsent") === "true"; 
+}
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -23,7 +27,7 @@ i18n
     },
     detection: {
       order: ['cookie', 'localStorage', 'navigator'],
-      caches: ['cookie'],
+      caches: userConsentedToCookies() ? ['cookie'] : [],
     }
   });
 
