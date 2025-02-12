@@ -148,9 +148,18 @@
       "title": "Mon portfolio",
       "description": "Site web de portfolio",
       "img": "portfolioImg",
-      "badges": ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
+      "badges": [
+        "React",
+        "MUI",
+        "SwiperJs",
+        "React Hook Form",
+        "Zod",
+        "EmailJS",
+        "i18next",
+        "Vite"
+      ],
       "github": "https://github.com/saintgregoire/Portfolio",
-      "site": "#"
+      "site": null
     },
     {
       "id": 4,
@@ -205,5 +214,20 @@
       "description": "Pendant ma formation React, j'ai appris à créer des interfaces utilisateur dynamiques et performantes en comprenant les composants, les props et l'état, en utilisant des hooks pour la gestion du cycle de vie et de l'état, et en implémentant le routage avec React Router pour les SPAs. J'ai acquis de l'expérience dans la récupération de données en temps réel avec des APIs (fetch, Axios), la configuration de projets avec Vite, l'optimisation des performances et le respect des meilleures pratiques. J'ai également travaillé avec MUI (Material-UI) pour concevoir des interfaces et géré des formulaires avec React Hook Form pour une validation fluide.",
       "img": "hillel"
     }
-  ]
+  ],
+  "Copyright": "Droit d'auteur",
+  "Permission is hereby granted": "Par la présente, il est accordé, gratuitement, à toute personne obtenant une copie de ce logiciel et des fichiers de documentation associés (le 'Logiciel'), de traiter le Logiciel sans restriction, y compris, mais sans s'y limiter, les droits d'utiliser, copier, modifier, fusionner, publier, distribuer, concéder des sous-licences et/ou vendre des copies du Logiciel, et de permettre aux personnes à qui le Logiciel est fourni de le faire, sous réserve des conditions suivantes :",
+  "The above copyright": "L'avis de droit d'auteur ci-dessus et cet avis de permission doivent être inclus dans toutes les copies ou portions substantielles du Logiciel.",
+  "THE SOFTWARE IS": "LE LOGICIEL EST FOURNI 'EN L'ÉTAT', SANS AUCUNE GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE COMMERCIALISATION, D'ADAPTATION À UN OBJECTIF PARTICULIER ET DE NON-VIOLATION. EN AUCUN CAS LES AUTEURS OU LES DÉTENTEURS DE DROITS D'AUTEUR NE POURRONT ÊTRE TENUS RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGES OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION EN CONTRAT, EN RESPONSABILITÉ OU AUTRE, DÉCOULANT DE, OU EN LIEN AVEC LE LOGICIEL OU L'UTILISATION OU AUTRES TRAITEMENTS DU LOGICIEL.",
+  "close": "Fermer",
+  "Terms of Use": "Conditions d'utilisation",
+  "General Provisions": "1. Dispositions générales <br /> Ce site web est destiné à un usage personnel en tant que portfolio de développeur web. Tous les matériaux présents sur le site sont la propriété intellectuelle du propriétaire et sont protégés par le droit d'auteur.",
+  "Use of Content": "2. Utilisation du contenu <br /> Les utilisateurs peuvent utiliser tout le contenu du site, sauf les photos où apparaît le propriétaire et ses coordonnées, sans le consentement préalable du propriétaire du site.",
+  "Liability": "3. Responsabilité <br /> Le propriétaire du site n'est pas responsable des dommages directs ou indirects découlant de l'utilisation du site, y compris mais sans s'y limiter, des erreurs ou omissions dans le contenu.",
+  "Changes to Terms": "4. Modifications des conditions <br /> Le propriétaire du site se réserve le droit de modifier les conditions d'utilisation du site à tout moment sans préavis. Il est recommandé de vérifier régulièrement les conditions d'utilisation actuelles.",
+  "Privacy Policy": "Politique de confidentialité",
+  "Data Collection": "1. Collecte de données <br /> Nous collectons le nom et l'email des utilisateurs via le formulaire de contact sur le site pour envoyer des notifications et des messages.",
+  "Data Usage": "2. Utilisation des données <br /> Les données collectées sont utilisées uniquement pour envoyer des notifications et communiquer avec l'utilisateur. Nous ne partageons pas les données avec des tiers.",
+  "Data Storage": "3. Stockage des données <br /> Toutes les données sont stockées sur le serveur. La transmission des données est effectuée via EmailJs, garantissant une transmission sécurisée.",
+  "Data Security": "4. Sécurité des données <br /> Nous prenons toutes les mesures nécessaires pour protéger les données ; cependant, nous ne pouvons garantir la sécurité complète des données pendant leur transmission sur Internet."
 }

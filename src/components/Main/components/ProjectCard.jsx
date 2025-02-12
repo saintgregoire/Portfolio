@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
     <Box
       component="div"
       sx={{
-        mx: 'auto',
+        mx: "auto",
         maxWidth: 400,
         height: "400px",
         display: "flex",
@@ -125,14 +125,16 @@ const ProjectCard = (props) => {
           >
             <GitHubIcon sx={{ fontSize: "3rem" }} />
           </Link>
-          <Link
-            href={site}
-            underline="none"
-            target="_blank"
-            alt={`site ${title}`}
-          >
-            <LanguageIcon sx={{ fontSize: "3rem" }} />
-          </Link>
+          {site !== null && (
+            <Link
+              href={site}
+              underline="none"
+              target="_blank"
+              alt={`site ${title}`}
+            >
+              <LanguageIcon sx={{ fontSize: "3rem" }} />
+            </Link>
+          )}
         </Box>
       </Card>
     </Box>

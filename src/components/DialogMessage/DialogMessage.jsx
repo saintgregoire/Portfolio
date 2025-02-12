@@ -14,10 +14,13 @@ import { useContext } from "react";
 import { DialogContext } from "../../context/DialogContext";
 import License from "./components/License";
 import Terms from "./components/Terms";
+import { useTranslation } from "react-i18next";
 
 const DialogMessage = () => {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  const {t} = useTranslation();
 
   const { openDialog, setOpenDialog, content } = useContext(DialogContext);
 
@@ -32,11 +35,11 @@ const DialogMessage = () => {
       onClose={handleClose}
       aria-labelledby="responsive-dialog-title"
     >
-      <DialogTitle id="responsive-dialog-title">
+      <DialogTitle id="responsive-dialog-title" sx={{pt: '3rem'}}>
         {content === "license"
           ? "MIT License"
           : content === "terms"
-          ? "Terms of Use & Privacy Policy"
+          ? t("Terms of Use & Privacy Policy")
           : null}
       </DialogTitle>
       <IconButton
@@ -65,7 +68,7 @@ const DialogMessage = () => {
         </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose}>Close</Button>
+        <Button onClick={handleClose}>{t("close")}</Button>
       </DialogActions>
     </Dialog>
   );

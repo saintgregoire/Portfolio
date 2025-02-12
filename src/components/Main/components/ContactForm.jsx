@@ -4,8 +4,7 @@ import {
   Button,
   Checkbox,
   FormHelperText,
-  TextField,
-  Typography,
+  TextField
 } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
@@ -148,16 +147,7 @@ const ContactForm = () => {
                   color: errors.checkbox ? "#d32f2f" : "inherit",
                 }}
               />
-              <Typography
-                component="p"
-                sx={{
-                  fontSize: "12px",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: ".1rem",
-                }}
-              >
-                {t("I agree with")}
+                
                 <Button
                   variant="text"
                   onClick={handleShowTerms}
@@ -166,15 +156,15 @@ const ContactForm = () => {
                     fontWeight: 400,
                     fontSize: "12px",
                     textTransform: "none",
+                    textAlign: 'start',
                     "&:hover": {
                       background: "none",
                       textDecoration: "underline",
                     },
                   }}
                 >
-                  {t("Terms of Use & Privacy Policy")}
+                  {t("I agree with")}&nbsp;{t("Terms of Use & Privacy Policy")}
                 </Button>
-              </Typography>
             </Box>
             {errors.checkbox && (
               <FormHelperText sx={{ color: "#d32f2f", mx: "14px" }}>

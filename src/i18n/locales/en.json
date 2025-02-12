@@ -150,7 +150,7 @@
       "img": "portfolioImg",
       "badges": ["React", "MUI", "SwiperJs", "React Hook Form", "Zod", "EmailJS", "i18next", "Vite"],
       "github": "https://github.com/saintgregoire/Portfolio",
-      "site": "#"
+      "site": null
     },
     {
       "id": 4,
@@ -207,5 +207,20 @@
         "During my React training, I learned to build dynamic, high-performance UIs by understanding components, props, and state, using hooks for lifecycle and state management, and implementing routing with React Router for SPAs. I gained experience in fetching real-time data with APIs (fetch, Axios), setting up projects with Vite, optimizing performance, and following best practices. I also worked with MUI (Material-UI) to design UIs and managed forms with React Hook Form for smooth validation.",
       "img": "hillel"
     }
-  ]
+  ],
+  "Copyright": "Copyright",
+  "Permission is hereby granted": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files & (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:",
+  "The above copyright": "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+  "THE SOFTWARE IS": "THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+  "close": "Close",
+  "Terms of Use": "Terms of Use",
+  "General Provisions": "1. General Provisions <br /> This website is intended for personal use as a web developer portfolio. All materials on the site are the intellectual property of the owner and are protected by copyright.",
+  "Use of Content": "2. Use of Content <br /> Users may use all content on the website except for photos where the owner appears and his contact details, without prior consent from the website owner.",
+  "Liability": "3. Liability <br /> The website owner is not responsible for any direct or indirect damages arising from the use of the site, including but not limited to errors or omissions in the content.",
+  "Changes to Terms": "4. Changes to Terms <br /> The website owner reserves the right to modify the terms of use of the site at any time without prior notice. It is recommended to regularly check the current terms of use.",
+  "Privacy Policy": "Privacy Policy",
+  "Data Collection": "1. Data Collection <br /> We collect users name and email through the contact form on the website to send notifications and messages.",
+  "Data Usage": "2. Data Usage <br /> The collected data is used solely for sending notifications and communicating with the user. We do not share data with third parties.",
+  "Data Storage": "3. Data Storage <br /> All data is stored on the server. Data transmission is done through EmailJs, ensuring secure transmission.",
+  "Data Security": "4. Data Security <br /> We take all necessary measures to protect the data; however, we cannot guarantee the complete security of data during its transmission over the internet."
 }
