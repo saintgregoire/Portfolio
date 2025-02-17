@@ -1,15 +1,7 @@
-import {
-  Avatar,
-  Card,
-  CardHeader,
-  Typography,
-  CardContent,
-  Link,
-  IconButton,
-  Box,
-} from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Card, IconButton, Box } from "@mui/material";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CardStaticContent from "./CardStaticContent";
 import { useEffect, useRef, useState } from "react";
 
 const RecommendationCard = (props) => {
@@ -54,37 +46,12 @@ const RecommendationCard = (props) => {
           },
         }}
       >
-        <CardHeader
-          sx={{ p: "1.5rem 1.5rem 0" }}
-          avatar={<Avatar aria-label="recipe">{name[0]}</Avatar>}
-          action={
-            <Link
-              underline="none"
-              href="https://www.linkedin.com/in/maksym-voznichka/details/recommendations/?detailScreenTabIndex=0"
-              target="_blank"
-              sx={{ color: "#0A66C2" }}
-            >
-              <LinkedInIcon />
-            </Link>
-          }
-          title={<Typography>{name}</Typography>}
-          subheader={
-            <>
-              {post}
-              <Typography variant="body2" sx={{ color: "#18181b" }}>
-                {relation}
-              </Typography>
-            </>
-          }
+        <CardStaticContent
+          name={name}
+          post={post}
+          relation={relation}
+          text={text}
         />
-        <CardContent sx={{ p: "1rem 1.5rem 1.5rem" }}>
-          <Typography
-            variant="body2"
-            sx={{ color: "text.secondary", pb: "1.5rem" }}
-          >
-            {text}
-          </Typography>
-        </CardContent>
         {showExpandBtn && (
           <IconButton
             onClick={handleExpandClick}
