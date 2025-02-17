@@ -1,16 +1,16 @@
 import { Box, Container, List, Typography } from "@mui/material";
-import EducationCard from "../components/EducationCard";
-import wa from "../../../assets/img/icons/3wa.png";
-import hillel from "../../../assets/img/icons/hillel.png";
-import basic from "../../../assets/img/education/basic.png";
-import diploma from "../../../assets/img/education/diploma.png";
-import jsDiploma from "../../../assets/img/education/js-free-code.png";
-import php from "../../../assets/img/education/php.png";
-import react from "../../../assets/img/education/react.png";
-import respDiploma from "../../../assets/img/education/resp-free-code.png";
-import CardSlider from "../components/CardSlider";
+import EducationCard from "./components/EducationCard";
+import wa from "../../../../assets/img/icons/3wa.png";
+import hillel from "../../../../assets/img/icons/hillel.png";
+import basic from "../../../../assets/img/education/basic.png";
+import diploma from "../../../../assets/img/education/diploma.png";
+import jsDiploma from "../../../../assets/img/education/js-free-code.png";
+import php from "../../../../assets/img/education/php.png";
+import react from "../../../../assets/img/education/react.png";
+import respDiploma from "../../../../assets/img/education/resp-free-code.png";
+import CardSlider from "../../components/CardSlider";
 import { Autoplay } from "swiper/modules";
-import FullScreenImage from "../components/FullScreenImage";
+import FullScreenImage from "./components/FullScreenImage";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 

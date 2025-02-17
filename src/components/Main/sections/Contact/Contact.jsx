@@ -1,38 +1,37 @@
 import { Container, Typography } from "@mui/material";
-import SkillsBox from "../components/SkillsBox";
+import ContactForm from "./components/ContactForm";
+import Social from "../../components/Social";
 import { useTranslation } from "react-i18next";
 
-const Skills = () => {
-
-  const {t} = useTranslation();
-
+const Contact = () => {
+  const { t } = useTranslation();
   return (
     <Container
       component="section"
       maxWidth="xl"
-      id="skills"
+      id="contacts"
       sx={{
         py: "4rem",
         textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Typography component="h2" variant="h2">
-        {t("skills")}
+        {t("contacts")}
       </Typography>
       <Typography
         component="p"
         sx={{
           mt: ".5rem",
         }}
-      >
-        {t("skills desc")}
-      </Typography>
-      <SkillsBox title="Frontend" type="frontend" />
-      <SkillsBox title="Backend" type="backend" />
-      <SkillsBox title={t("tools")} type="tools" />
-      <SkillsBox title="CMS" type="cms" />
+        dangerouslySetInnerHTML={{ __html: t("contacts desc") }}
+      />
+      <Social />
+      <ContactForm />
     </Container>
   );
 };
 
-export default Skills;
+export default Contact;

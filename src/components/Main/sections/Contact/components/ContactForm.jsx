@@ -10,8 +10,8 @@ import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { useContext } from "react";
-import { SnackbarContext } from "../../../context/SnackbarContext";
-import { DialogContext } from "../../../context/DialogContext";
+import { SnackbarContext } from "../../../../../context/SnackbarContext";
+import { DialogContext } from "../../../../../context/DialogContext";
 import { useTranslation } from "react-i18next";
 
 const schema = z.object({

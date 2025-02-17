@@ -1,6 +1,6 @@
 import { Container, Typography, Box } from "@mui/material";
-import RecommendationCard from "../components/RecommendationCard";
-import CardSlider from "../components/CardSlider";
+import RecommendationCard from "./components/RecommendationCard";
+import CardSlider from "../../components/CardSlider";
 import { Pagination, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 
