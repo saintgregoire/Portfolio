@@ -1,6 +1,6 @@
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
-import frenchFlag from "../../../assets/img/icons/french.png";
-import englishFlag from "../../../assets/img/icons/eng.png";
+import frenchFlag from "../../../assets/img/webp/french.webp";
+import englishFlag from "../../../assets/img/webp/eng.webp";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";

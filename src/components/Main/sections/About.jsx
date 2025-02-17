@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import myPhoto from "../../../assets/img/me.jpg";
+import myPhoto from "../../../assets/img/webp/me.webp";
 import { frame } from "../../../utils/keyframes";
 import { useTranslation } from "react-i18next";
 

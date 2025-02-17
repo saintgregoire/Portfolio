@@ -1,24 +1,24 @@
 import { Box, Typography } from "@mui/material";
-import bootstrapLogo from "../../../../../assets/img/icons/bootstrap.png";
+import bootstrapLogo from "../../../../../assets/img/webp/bootstrap.webp";
 import cssLogo from "../../../../../assets/img/icons/css-512.webp";
 import gulpLogo from "../../../../../assets/img/icons/gulp.webp";
 import htmlLogo from "../../../../../assets/img/icons/html.webp";
-import jsLogo from "../../../../../assets/img/icons/js.png";
-import muiLogo from "../../../../../assets/img/icons/mui.png";
-import phpLogo from "../../../../../assets/img/icons/php.png";
-import reactLogo from "../../../../../assets/img/icons/react.png";
-import restApiLogo from "../../../../../assets/img/icons/rest_api.png";
-import sassLogo from "../../../../../assets/img/icons/sass.png";
-import tailwindLogo from "../../../../../assets/img/icons/tailwind.png";
-import twigLogo from "../../../../../assets/img/icons/twig.png";
-import viteLogo from "../../../../../assets/img/icons/vite.png";
+import jsLogo from "../../../../../assets/img/webp/js.webp";
+import muiLogo from "../../../../../assets/img/webp/mui.webp";
+import phpLogo from "../../../../../assets/img/webp/php.webp";
+import reactLogo from "../../../../../assets/img/webp/react.webp";
+import restApiLogo from "../../../../../assets/img/webp/rest_api.webp";
+import sassLogo from "../../../../../assets/img/webp/sass.webp";
+import tailwindLogo from "../../../../../assets/img/webp/tailwind.webp";
+import twigLogo from "../../../../../assets/img/webp/twig.webp";
+import viteLogo from "../../../../../assets/img/webp/vite.webp";
 import mySqlLogo from "../../../../../assets/img/icons/mysql.webp";
-import reactHookFormLogo from "../../../../../assets/img/icons/react-hook-form.png";
-import zodLogo from "../../../../../assets/img/icons/zod.png";
-import emailJsLogo from "../../../../../assets/img/icons/emailjs.png";
-import routerLogo from "../../../../../assets/img/icons/router.png";
-import swiperLogo from "../../../../../assets/img/icons/swiper.png";
-import i18nLogo from "../../../../../assets/img/icons/i18n.png";
+import reactHookFormLogo from "../../../../../assets/img/webp/react-hook-form.webp";
+import zodLogo from "../../../../../assets/img/webp/zod.webp";
+import emailJsLogo from "../../../../../assets/img/webp/emailjs.webp";
+import routerLogo from "../../../../../assets/img/webp/router.webp";
+import swiperLogo from "../../../../../assets/img/webp/swiper.webp";
+import i18nLogo from "../../../../../assets/img/webp/i18n.webp";
 
 
 const Badge = ({name}) => {
