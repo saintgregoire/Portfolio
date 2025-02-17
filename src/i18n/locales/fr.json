@@ -230,5 +230,8 @@
   "Data Collection": "1. Collecte des données <br /> Nous collectons le nom et l'email des utilisateurs via le formulaire de contact sur le site web pour envoyer des notifications et des messages. Nous pouvons également collecter des données de préférence linguistique pour améliorer l'expérience utilisateur en affichant le contenu dans la langue préférée de l'utilisateur.",
   "Data Usage": "2. Utilisation des données <br /> Les données collectées sont utilisées uniquement pour envoyer des notifications et communiquer avec l'utilisateur. Nous ne partageons pas les données avec des tiers. Les données de préférence linguistique sont utilisées uniquement pour personnaliser l'expérience du site et ne sont pas partagées avec des parties externes.",
   "Data Storage": "3. Stockage des données <br /> Toutes les données sont stockées sur le serveur. La transmission des données est effectuée via EmailJs, garantissant une transmission sécurisée. Les données de préférence linguistique peuvent également être stockées dans des cookies ou localStorage pour plus de commodité lors des visites futures.",
-  "Data Security": "4. Sécurité des données <br /> Nous prenons toutes les mesures nécessaires pour protéger les données; cependant, nous ne pouvons garantir la sécurité complète des données lors de leur transmission sur Internet. Cela s'applique également aux données de préférence linguistique stockées dans des cookies ou localStorage."
+  "Data Security": "4. Sécurité des données <br /> Nous prenons toutes les mesures nécessaires pour protéger les données; cependant, nous ne pouvons garantir la sécurité complète des données lors de leur transmission sur Internet. Cela s'applique également aux données de préférence linguistique stockées dans des cookies ou localStorage.",
+  "We use cookies to improve your experience": "Nous utilisons des cookies pour améliorer votre expérience.",
+  "Accept": "Accepter",
+  "Decline": "Refuser"
 }
