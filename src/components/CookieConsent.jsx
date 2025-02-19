@@ -33,7 +33,7 @@ const CookieConsent = () => {
   return (
     <Snackbar
       open={open}
-      anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+      anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
     >
       <Paper
         elevation={24}
